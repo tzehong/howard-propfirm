@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Howard PropFirm — Navigate Your Trading Edge</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<script>
+tailwind.config={theme:{extend:{colors:{
+  navy:{950:'#060D1A',900:'#07111F',800:'#0E2040',700:'#162A58'},
+  cyan:{DEFAULT:'#00C9FF',dim:'#1DA8E8',glow:'#00C9FF20'},
+  gold:{DEFAULT:'#C9A22A',light:'#E5BC44'},
+  silver:{DEFAULT:'#8BA8BE',light:'#B8CDD9'}
+},fontFamily:{inter:['Inter','sans-serif']},letterSpacing:{tightest:'-0.04em'}}}}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#060D1A;color:#fff;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");opacity:0.45}
+/* Announcement bar */
+.ann-bar{background:#07111F;border-bottom:1px solid #00C9FF30}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.marquee-track{display:flex;width:max-content;animation:marquee 28s linear infinite}
+.marquee-track:hover{animation-play-state:paused}
+/* Nav */
+.nav-solid{background:rgba(6,13,26,0.95);backdrop-filter:blur(20px);border-bottom:1px solid #00C9FF18}
+.nav-transparent{background:transparent}
+.nav-link{position:relative;transition:color 0.2s}
+.nav-link::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1.5px;background:#00C9FF;transition:width 0.25s cubic-bezier(0.4,0,0.2,1);box-shadow:0 0 8px #00C9FF}
+.nav-link:hover::after{width:100%}
+.nav-link:hover{color:#00C9FF}
+/* Buttons */
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#00C9FF,#1DA8E8);color:#060D1A;font-weight:800;padding:12px 24px;border-radius:8px;box-shadow:0 0 24px #00C9FF40,0 4px 12px #00000060;transition:transform 0.2s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.2s;cursor:pointer;border:none;text-decoration:none;font-size:14px;letter-spacing:-0.01em}
+.btn-primary:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 0 40px #00C9FF60,0 8px 20px #00000070}
+.btn-primary:active{transform:scale(0.99)}
+.btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#00C9FF;font-weight:700;padding:11px 22px;border-radius:8px;border:1.5px solid #00C9FF60;transition:transform 0.2s cubic-bezier(0.34,1.56,0.64,1),border-color 0.2s,background 0.2s;cursor:pointer;text-decoration:none;font-size:14px}
+.btn-secondary:hover{transform:translateY(-2px);border-color:#00C9FF;background:#00C9FF10}
+.btn-ghost{display:inline-flex;align-items:center;gap:6px;color:#8BA8BE;font-weight:600;padding:10px 20px;border-radius:8px;border:1px solid #8BA8BE30;transition:color 0.2s,border-color 0.2s;cursor:pointer;text-decoration:none;font-size:14px}
+.btn-ghost:hover{color:#fff;border-color:#8BA8BE60}
+/* Cards */
+.card{background:linear-gradient(145deg,#0E2040,#07111F);border:1px solid #00C9FF18;border-radius:16px;box-shadow:0 4px 24px #00000050,inset 0 1px 0 #ffffff06;transition:transform 0.25s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.25s,border-color 0.25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 8px 40px #00000070,0 0 30px #00C9FF18;border-color:#00C9FF35}
+.card-featured{background:linear-gradient(145deg,#162A58,#0E2040);border:1.5px solid #00C9FF55;box-shadow:0 4px 24px #00000050,0 0 40px #00C9FF18,inset 0 1px 0 #00C9FF18}
+.card-featured:hover{box-shadow:0 8px 48px #00000070,0 0 60px #00C9FF35;border-color:#00C9FF}
+/* Tag pill */
+.tag{display:inline-flex;align-items:center;gap:6px;background:#00C9FF12;border:1px solid #00C9FF28;color:#00C9FF;font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;letter-spacing:0.06em;text-transform:uppercase}
+.tag-gold{background:#C9A22A12;border-color:#C9A22A28;color:#C9A22A}
+/* Stars */
+.stars{color:#C9A22A;font-size:12px;letter-spacing:1px}
+/* Section glow */
+.s-glow{background:radial-gradient(ellipse 70% 50% at 50% 50%,#00C9FF08 0%,transparent 70%),#060D1A}
+/* Glow line */
+.glow-line{height:1px;background:linear-gradient(90deg,transparent,#00C9FF60,transparent)}
+/* Hero grid bg */
+.hero-bg{background:linear-gradient(180deg,#07111F 0%,#060D1A 100%);position:relative}
+.hero-bg::before{content:'';position:absolute;inset:0;background-image:linear-gradient(#00C9FF08 1px,transparent 1px),linear-gradient(90deg,#00C9FF08 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 30%,transparent 100%)}
+/* Chart animation */
+@keyframes chartDraw{from{stroke-dashoffset:600}to{stroke-dashoffset:0}}
+.chart-line{stroke-dasharray:600;stroke-dashoffset:600;animation:chartDraw 3s ease forwards 0.5s}
+/* Pulse dot */
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.3)}}
+.pulse{animation:pulse 2s ease infinite}
+/* Ticker */
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.ticker-wrap{overflow:hidden}
+.ticker-inner{display:flex;width:max-content;animation:ticker 35s linear infinite}
+/* FAQ */
+.faq-body{max-height:0;overflow:hidden;transition:max-height 0.3s cubic-bezier(0.4,0,0.2,1),opacity 0.3s;opacity:0}
+.faq-body.open{max-height:300px;opacity:1}
+.faq-icon{transition:transform 0.3s cubic-bezier(0.4,0,0.2,1)}
+.faq-icon.open{transform:rotate(45deg)}
+/* Reveal — no opacity tricks, pure CSS transition on scroll */
+.reveal{opacity:1;transform:none}
+/* Mobile menu */
+#mmenu{max-height:0;overflow:hidden;opacity:0;transition:max-height 0.3s ease,opacity 0.3s}
+#mmenu.open{max-height:600px;opacity:1}
+/* Filter tabs */
+.filter-tab{padding:8px 18px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;border:1px solid #00C9FF25;color:#8BA8BE;background:transparent;transition:all 0.2s;white-space:nowrap}
+.filter-tab.active,.filter-tab:hover{background:#00C9FF15;border-color:#00C9FF55;color:#00C9FF}
+/* Firm grid hidden */
+.firm-group{display:none}
+.firm-group.active{display:block}
+/* Strategy card hover */
+.strat-card{cursor:pointer}
+.strat-card:hover .strat-icon{transform:scale(1.1);box-shadow:0 0 30px #00C9FF40}
+.strat-icon{transition:transform 0.25s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.25s}
+/* Progress bar */
+.prog-bar{height:4px;border-radius:999px;background:linear-gradient(90deg,#00C9FF,#1DA8E8);box-shadow:0 0 8px #00C9FF60}
+</style>
+</head>
+<body class="font-inter">
+
+<!-- ═══════════════════════════════════════════
+     1. ANNOUNCEMENT BAR
+══════════════════════════════════════════════ -->
+<div class="ann-bar py-2 overflow-hidden relative z-50">
+  <div class="marquee-track">
+    <div class="flex items-center gap-10 px-8 whitespace-nowrap text-xs font-semibold">
+      <span class="text-cyan-dim">⚡ 2026 Rankings Released:</span>
+      <a href="#firms" class="text-white hover:text-cyan-DEFAULT transition-colors">Compare the Best Futures Prop Firms →</a>
+      <span class="text-silver/40">|</span>
+      <span class="text-cyan-dim">💰 Exclusive Discounts:</span>
+      <span class="text-white">Prop firm discounts & payout offers updated weekly</span>
+      <span class="text-silver/40">|</span>
+      <span class="text-cyan-dim">🏆 Top Pick:</span>
+      <span class="text-white">One Up Trader rated #1 by the community</span>
+      <span class="text-silver/40">|</span>
+      <span class="text-cyan-dim">📊 Market Briefing:</span>
+      <span class="text-white">ES, NQ, Gold levels updated daily →</span>
+      <span class="text-silver/40 mx-4">· HOWARD PROPFIRM ·</span>
+    </div>
+    <div class="flex items-center gap-10 px-8 whitespace-nowrap text-xs font-semibold" aria-hidden="true">
+      <span class="text-cyan-dim">⚡ 2026 Rankings Released:</span>
+      <a href="#firms" class="text-white hover:text-cyan-DEFAULT transition-colors">Compare the Best Futures Prop Firms →</a>
+      <span class="text-silver/40">|</span>
+      <span class="text-cyan-dim">💰 Exclusive Discounts:</span>
+      <span class="text-white">Prop firm discounts & payout offers updated weekly</span>
+      <span class="text-silver/40">|</span>
+      <span class="text-cyan-dim">🏆 Top Pick:</span>
+      <span class="text-white">One Up Trader rated #1 by the community</span>
+      <span class="text-silver/40">|</span>
+      <span class="text-cyan-dim">📊 Market Briefing:</span>
+      <span class="text-white">ES, NQ, Gold levels updated daily →</span>
+      <span class="text-silver/40 mx-4">· HOWARD PROPFIRM ·</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     2. NAVIGATION BAR
+══════════════════════════════════════════════ -->
+<nav id="navbar" class="nav-solid fixed top-7 left-0 right-0 z-40 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-5 py-2 flex items-center justify-between gap-4">
+    <!-- Logo -->
+    <a href="#" class="flex-shrink-0">
+      <img src="brand_assets/Logo.png" alt="Howard PropFirm" class="h-20 w-auto" style="mix-blend-mode:screen"/>
+    </a>
+    <!-- Desktop menu -->
+    <div class="hidden xl:flex items-center gap-6">
+      <a href="#" class="nav-link text-sm font-medium text-silver">Home</a>
+      <a href="#reviews" class="nav-link text-sm font-medium text-silver">Prop Firm Reviews</a>
+      <a href="#firms" class="nav-link text-sm font-medium text-silver">Compare Firms</a>
+      <a href="#strategies" class="nav-link text-sm font-medium text-silver">Strategies</a>
+      <a href="#education" class="nav-link text-sm font-medium text-silver">Education</a>
+      <a href="#market" class="nav-link text-sm font-medium text-silver">Market News</a>
+      <a href="#youtube" class="nav-link text-sm font-medium text-silver">YouTube</a>
+      <a href="#about" class="nav-link text-sm font-medium text-silver">About</a>
+    </div>
+    <!-- CTAs -->
+    <div class="hidden lg:flex items-center gap-2">
+      <a href="#firms" class="btn-primary text-xs py-2 px-4">Compare Firms</a>
+      <a href="#newsletter" class="btn-secondary text-xs py-2 px-4">Subscribe</a>
+    </div>
+    <!-- Hamburger -->
+    <button id="ham" class="lg:hidden p-2 text-silver hover:text-white transition-colors">
+      <svg id="hopen" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <svg id="hclose" class="hidden" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mmenu" class="lg:hidden border-t border-cyan-DEFAULT/10">
+    <div class="px-5 py-4 flex flex-col gap-3">
+      <a href="#" class="text-sm font-medium text-silver hover:text-white transition-colors">Home</a>
+      <a href="#reviews" class="text-sm font-medium text-silver hover:text-white transition-colors">Prop Firm Reviews</a>
+      <a href="#firms" class="text-sm font-medium text-silver hover:text-white transition-colors">Compare Firms</a>
+      <a href="#strategies" class="text-sm font-medium text-silver hover:text-white transition-colors">Strategies</a>
+      <a href="#market" class="text-sm font-medium text-silver hover:text-white transition-colors">Market News</a>
+      <a href="#youtube" class="text-sm font-medium text-silver hover:text-white transition-colors">YouTube</a>
+      <a href="#about" class="text-sm font-medium text-silver hover:text-white transition-colors">About</a>
+      <div class="flex gap-2 pt-2">
+        <a href="#firms" class="btn-primary text-xs flex-1 justify-center">Compare Firms</a>
+        <a href="#newsletter" class="btn-secondary text-xs flex-1 justify-center">Subscribe</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     3. HERO SECTION
+══════════════════════════════════════════════ -->
+<section class="hero-bg relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+  <!-- Glow orbs -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] pointer-events-none" style="background:radial-gradient(ellipse at 50% 0%,#00C9FF14 0%,transparent 70%)"></div>
+  <div class="absolute top-1/3 right-0 w-96 h-96 pointer-events-none" style="background:radial-gradient(ellipse,#1DA8E80C 0%,transparent 70%)"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <!-- Left -->
+      <div>
+        <div class="flex items-center gap-3 mb-5 reveal">
+          <span class="tag"><span class="w-1.5 h-1.5 rounded-full bg-cyan-DEFAULT pulse"></span>Live Rankings 2026</span>
+          <span class="tag-gold tag">Futures &amp; CFD</span>
+        </div>
+        <h1 class="reveal d1 text-5xl md:text-6xl lg:text-7xl font-black leading-none tracking-tightest mb-5">
+          Navigate Your<br/><span class="text-cyan-DEFAULT" style="text-shadow:0 0 60px #00C9FF60">Trading Edge</span>
+        </h1>
+        <p class="reveal d2 text-base md:text-lg text-silver mb-8 max-w-lg" style="line-height:1.75">
+          Howard PropFirm delivers professional futures market insights, strategy education, and independent prop firm analysis for serious funded traders.
+        </p>
+        <div class="reveal d3 flex flex-wrap gap-3 mb-8">
+          <a href="#firms" class="btn-primary">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm0 0V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10m-6 0a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2m0 0V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v14a2 2 0 0 0-2 2h-2a2 2 0 0 1-2-2z"/></svg>
+            Compare Prop Firms
+          </a>
+          <a href="#youtube" class="btn-secondary">
+            <svg width="16" height="16" fill="#00C9FF" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#060D1A"/></svg>
+            Watch on YouTube
+          </a>
+          <a href="#market" class="btn-ghost text-xs">
+            Latest Market Outlook →
+          </a>
+        </div>
+        <p class="reveal d4 text-xs text-silver/50 font-medium tracking-wide">Independent research for global funded traders.</p>
+      </div>
+
+      <!-- Right: Animated chart card -->
+      <div class="reveal d2 relative">
+        <div class="card-featured card p-6 rounded-2xl relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-64 h-64 pointer-events-none" style="background:radial-gradient(circle,#00C9FF12 0%,transparent 70%);transform:translate(30%,-30%)"></div>
+          <!-- Mini ticker -->
+          <div class="ticker-wrap mb-5 rounded-lg py-2 px-3" style="background:#00C9FF08;border:1px solid #00C9FF18">
+            <div class="ticker-inner text-xs font-mono font-semibold">
+              <span class="mr-8 text-cyan-DEFAULT">ES <span class="text-white">5,842</span> <span class="text-green-400">▲+0.4%</span></span>
+              <span class="mr-8 text-cyan-DEFAULT">NQ <span class="text-white">20,384</span> <span class="text-green-400">▲+0.6%</span></span>
+              <span class="mr-8 text-cyan-DEFAULT">GC <span class="text-white">2,318</span> <span class="text-green-400">▲+0.3%</span></span>
+              <span class="mr-8 text-cyan-DEFAULT">CL <span class="text-white">77.23</span> <span class="text-red-400">▼-0.2%</span></span>
+              <span class="mr-8 text-cyan-DEFAULT">RTY <span class="text-white">2,043</span> <span class="text-red-400">▼-0.1%</span></span>
+              <span class="mr-8 text-cyan-DEFAULT">ES <span class="text-white">5,842</span> <span class="text-green-400">▲+0.4%</span></span>
+              <span class="mr-8 text-cyan-DEFAULT">NQ <span class="text-white">20,384</span> <span class="text-green-400">▲+0.6%</span></span>
+              <span class="mr-8 text-cyan-DEFAULT">GC <span class="text-white">2,318</span> <span class="text-green-400">▲+0.3%</span></span>
+            </div>
+          </div>
+          <!-- Chart -->
+          <div class="mb-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-semibold text-silver">Account Performance</span>
+              <span class="tag text-xs">Live Funded</span>
+            </div>
+            <svg viewBox="0 0 320 110" class="w-full h-28" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#00C9FF" stop-opacity="0.25"/>
+                  <stop offset="100%" stop-color="#00C9FF" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path class="chart-line" d="M0 90 L32 78 L64 82 L96 62 L128 66 L160 44 L192 50 L224 32 L256 22 L288 14 L320 6" stroke="#00C9FF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0 90 L32 78 L64 82 L96 62 L128 66 L160 44 L192 50 L224 32 L256 22 L288 14 L320 6 L320 110 L0 110 Z" fill="url(#cg)"/>
+              <!-- Candlestick overlays -->
+              <rect x="20" y="72" width="6" height="16" rx="1" fill="#00C9FF" opacity="0.6"/>
+              <line x1="23" y1="68" x2="23" y2="72" stroke="#00C9FF" stroke-width="1.5" opacity="0.6"/>
+              <rect x="60" y="76" width="6" height="12" rx="1" fill="#4a6a7e" opacity="0.6"/>
+              <rect x="90" y="56" width="6" height="14" rx="1" fill="#00C9FF" opacity="0.6"/>
+              <rect x="150" y="38" width="6" height="14" rx="1" fill="#00C9FF" opacity="0.6"/>
+              <rect x="220" y="26" width="6" height="14" rx="1" fill="#00C9FF" opacity="0.6"/>
+              <rect x="280" y="10" width="6" height="12" rx="1" fill="#00C9FF" opacity="0.6"/>
+              <!-- Live dot -->
+              <circle cx="320" cy="6" r="4" fill="#00C9FF"><animate attributeName="r" values="4;7;4" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/></circle>
+            </svg>
+          </div>
+          <!-- Stats -->
+          <div class="grid grid-cols-3 gap-3 mb-5">
+            <div class="text-center rounded-lg py-3" style="background:#00C9FF0A;border:1px solid #00C9FF18">
+              <div class="text-lg font-black text-cyan-DEFAULT">+24.8%</div>
+              <div class="text-xs text-silver mt-0.5">Return</div>
+            </div>
+            <div class="text-center rounded-lg py-3 border-x border-cyan-DEFAULT/15" style="background:#00C9FF0A;border:1px solid #00C9FF18">
+              <div class="text-lg font-black text-green-400">$48K</div>
+              <div class="text-xs text-silver mt-0.5">Paid Out</div>
+            </div>
+            <div class="text-center rounded-lg py-3" style="background:#00C9FF0A;border:1px solid #00C9FF18">
+              <div class="text-lg font-black text-cyan-DEFAULT">90%</div>
+              <div class="text-xs text-silver mt-0.5">Split</div>
+            </div>
+          </div>
+          <!-- Code -->
+          <div class="rounded-xl p-3 flex items-center justify-between" style="background:#C9A22A0D;border:1px solid #C9A22A28">
+            <div>
+              <div class="text-xs text-silver mb-0.5">Exclusive code</div>
+              <div class="font-black text-gold tracking-widest">HPF</div>
+            </div>
+            <button onclick="navigator.clipboard.writeText('HPF').then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',1500)})" class="text-xs font-bold text-cyan-DEFAULT border border-cyan-DEFAULT/30 hover:border-cyan-DEFAULT px-3 py-1.5 rounded-lg transition-colors">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     4. CREDIBILITY STRIP
+══════════════════════════════════════════════ -->
+<section class="border-y border-cyan-DEFAULT/10 py-10 relative z-10" style="background:#07111F">
+  <div class="max-w-7xl mx-auto px-6">
+    <p class="text-center text-sm text-silver mb-8 reveal">Helping traders evaluate funded opportunities with clarity and confidence.</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-0 mb-10">
+      <div class="reveal text-center px-6 py-4 md:border-r border-cyan-DEFAULT/10">
+        <div class="text-3xl md:text-4xl font-black text-cyan-DEFAULT mb-1" style="text-shadow:0 0 24px #00C9FF60">13+</div>
+        <div class="text-xs font-medium text-silver">Prop Firms Reviewed</div>
+      </div>
+      <div class="reveal d1 text-center px-6 py-4 md:border-r border-cyan-DEFAULT/10">
+        <div class="text-3xl md:text-4xl font-black text-cyan-DEFAULT mb-1" style="text-shadow:0 0 24px #00C9FF60">500+</div>
+        <div class="text-xs font-medium text-silver">Educational Videos</div>
+      </div>
+      <div class="reveal d2 text-center px-6 py-4 border-t md:border-t-0 md:border-r border-cyan-DEFAULT/10">
+        <div class="text-3xl md:text-4xl font-black text-cyan-DEFAULT mb-1" style="text-shadow:0 0 24px #00C9FF60">Weekly</div>
+        <div class="text-xs font-medium text-silver">Market Analysis</div>
+      </div>
+      <div class="reveal d3 text-center px-6 py-4 border-t md:border-t-0 border-cyan-DEFAULT/10">
+        <div class="text-3xl md:text-4xl font-black text-cyan-DEFAULT mb-1" style="text-shadow:0 0 24px #00C9FF60">Global</div>
+        <div class="text-xs font-medium text-silver">Trading Audience</div>
+      </div>
+    </div>
+    <!-- Firm logo strip -->
+    <div class="flex flex-wrap items-center justify-center gap-6 reveal">
+      <span class="text-xs text-silver/40 font-semibold uppercase tracking-widest mr-2">Featured Firms</span>
+      <div class="flex items-center gap-2 bg-navy-800/60 border border-cyan-DEFAULT/15 px-4 py-2 rounded-lg"><span class="text-sm font-bold text-silver">One Up Trader</span></div>
+      <div class="flex items-center gap-2 bg-navy-800/60 border border-cyan-DEFAULT/15 px-4 py-2 rounded-lg"><span class="text-sm font-bold text-silver">Blue Guardian</span></div>
+      <div class="flex items-center gap-2 bg-navy-800/60 border border-cyan-DEFAULT/15 px-4 py-2 rounded-lg"><span class="text-sm font-bold text-silver">Bulenox</span></div>
+      <div class="flex items-center gap-2 bg-navy-800/60 border border-cyan-DEFAULT/15 px-4 py-2 rounded-lg"><span class="text-sm font-bold text-silver">Elite Trader Funding</span></div>
+      <div class="flex items-center gap-2 bg-navy-800/60 border border-cyan-DEFAULT/15 px-4 py-2 rounded-lg"><span class="text-sm font-bold text-silver">Aqua Futures</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     5. COMPARE PROP FIRMS (Main Conversion)
+══════════════════════════════════════════════ -->
+<section id="firms" class="s-glow relative z-10 py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-10 reveal">
+      <span class="tag mb-4">2026 Rankings</span>
+      <h2 class="text-4xl md:text-5xl font-black tracking-tightest mt-4 mb-4">Find the Right Prop Firm<br/><span class="text-cyan-DEFAULT">for Your Trading Style</span></h2>
+      <p class="text-silver max-w-xl mx-auto text-sm" style="line-height:1.75">Rankings follow PropFirmMatch community scores. Use affiliate links for exclusive discounts.</p>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="flex flex-wrap justify-center gap-2 mb-10 reveal">
+      <button class="filter-tab active" onclick="filterFirms('futures',this)">Futures</button>
+      <button class="filter-tab" onclick="filterFirms('cfd',this)">CFD</button>
+    </div>
+
+    <!-- ── FUTURES FIRMS ── -->
+    <div id="tab-futures" class="firm-group active">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <!-- #1 One Up Trader -->
+        <div class="card card-featured p-6 flex flex-col reveal relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-40 h-40 pointer-events-none" style="background:radial-gradient(circle,#00C9FF10 0%,transparent 70%);transform:translate(30%,-30%)"></div>
+          <div class="flex items-start justify-between mb-4">
+            <img src="brand_assets/firms/oneuptrader.svg" alt="One Up Trader" class="w-16 h-16 rounded-xl object-contain bg-white p-1.5"/>
+            <span class="text-xs font-bold bg-cyan-DEFAULT text-navy-950 px-2.5 py-1 rounded-full">#1 Pick</span>
+          </div>
+          <h3 class="text-lg font-black mb-1">One Up Trader</h3>
+          <div class="stars mb-3">★★★★★ <span class="text-silver text-xs ml-1">5.0</span></div>
+          <p class="text-silver text-xs mb-4 flex-1" style="line-height:1.75">One of the most established futures prop firms. No time limits, simple trailing drawdown rules, and an outstanding payout track record trusted by thousands.</p>
+          <div class="grid grid-cols-3 gap-2 mb-5">
+            <div class="text-center rounded-lg py-2.5" style="background:#00C9FF0A;border:1px solid #00C9FF15">
+              <div class="text-sm font-black text-cyan-DEFAULT">90%</div>
+              <div class="text-xs text-silver mt-0.5">Split</div>
+            </div>
+            <div class="text-center rounded-lg py-2.5" style="background:#00C9FF0A;border:1px solid #00C9FF15">
+              <div class="text-sm font-black text-cyan-DEFAULT">Trail</div>
+              <div class="text-xs text-silver mt-0.5">Drawdown</div>
+            </div>
+            <div class="text-center rounded-lg py-2.5" style="background:#00C9FF0A;border:1px solid #00C9FF15">
+              <div class="text-sm font-black text-cyan-DEFAULT">$25K+</div>
+              <div class="text-xs text-silver mt-0.5">Account</div>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <a href="https://oneuptrader.com?tap_a=37351-37964c&tap_s=9801617-b41bf1" target="_blank" rel="noopener" class="btn-primary text-xs py-2.5 flex-1 justify-center">Visit Firm →</a>
+          </div>
+        </div>
+
+        <!-- #2 Blue Guardian -->
+        <div class="card p-6 flex flex-col reveal d1">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="brand_assets/firms/blueguardian.svg" alt="Blue Guardian" class="w-16 h-16 rounded-xl object-contain"/>
+            <div>
+              <h3 class="text-base font-black">Blue Guardian</h3>
+              <div class="stars text-xs">★★★★★ <span class="text-silver ml-1">4.9</span></div>
+            </div>
+          </div>
+          <p class="text-silver text-xs mb-4 flex-1" style="line-height:1.75">No daily drawdown limits, flexible rules, and one of the most forgiving evaluation structures. Ideal for swing traders and those who hold overnight positions.</p>
+          <div class="grid grid-cols-3 gap-2 mb-4">
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">90%</div><div class="text-xs text-silver">Split</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">Static</div><div class="text-xs text-silver">Drawdown</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">$10K+</div><div class="text-xs text-silver">Account</div></div>
+          </div>
+          <a href="https://blueguardian.com/?afmc=HPF" target="_blank" rel="noopener" class="btn-primary text-xs py-2.5 text-center justify-center w-full">Visit Firm →</a>
+        </div>
+
+        <!-- #3 Bulenox -->
+        <div class="card p-6 flex flex-col reveal d2">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="brand_assets/firms/bulenox.png" alt="Bulenox" class="w-16 h-16 rounded-xl object-contain"/>
+            <div>
+              <h3 class="text-base font-black">Bulenox</h3>
+              <div class="stars text-xs">★★★★★ <span class="text-silver ml-1">4.8</span></div>
+            </div>
+          </div>
+          <p class="text-silver text-xs mb-4 flex-1" style="line-height:1.75">Feature-rich platform with generous account sizes and transparent drawdown rules. Known for excellent trader support and consistent payout history.</p>
+          <div class="grid grid-cols-3 gap-2 mb-4">
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">85%</div><div class="text-xs text-silver">Split</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">Trail</div><div class="text-xs text-silver">Drawdown</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">$10K+</div><div class="text-xs text-silver">Account</div></div>
+          </div>
+          <a href="https://bulenox.com/member/aff/go/hong0201" target="_blank" rel="noopener" class="btn-primary text-xs py-2.5 text-center justify-center w-full">Visit Firm →</a>
+        </div>
+
+        <!-- #4 Elite Trader Funding -->
+        <div class="card p-6 flex flex-col reveal">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="brand_assets/firms/elitetrader.svg" alt="Elite Trader Funding" class="w-16 h-16 rounded-xl object-contain"/>
+            <div>
+              <h3 class="text-base font-black">Elite Trader Funding</h3>
+              <div class="stars text-xs">★★★★☆ <span class="text-silver ml-1">4.7</span></div>
+            </div>
+          </div>
+          <p class="text-silver text-xs mb-4 flex-1" style="line-height:1.75">Great for scalpers and high-frequency traders. Lenient rules, no minimum trading days, and a straightforward 1-step evaluation with fast approvals.</p>
+          <div class="grid grid-cols-3 gap-2 mb-4">
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">80%</div><div class="text-xs text-silver">Split</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">1-Step</div><div class="text-xs text-silver">Eval</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">$10K+</div><div class="text-xs text-silver">Account</div></div>
+          </div>
+          <a href="https://elitetraderfunding.app/evaluations?ref=HowardPropfirm" target="_blank" rel="noopener" class="btn-primary text-xs py-2.5 text-center justify-center w-full">Visit Firm →</a>
+        </div>
+
+        <!-- #5 Aqua Futures -->
+        <div class="card p-6 flex flex-col reveal d1">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="brand_assets/firms/aquafutures.svg" alt="Aqua Futures" class="w-16 h-16 rounded-xl object-contain"/>
+            <div>
+              <h3 class="text-base font-black">Aqua Futures</h3>
+              <div class="stars text-xs">★★★★☆ <span class="text-silver ml-1">4.6</span></div>
+            </div>
+          </div>
+          <p class="text-silver text-xs mb-4 flex-1" style="line-height:1.75">Clean evaluation rules, competitive fees, and fast payouts. A rising platform ideal for ES and NQ scalpers looking for a straightforward funded path.</p>
+          <div class="grid grid-cols-3 gap-2 mb-4">
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">85%</div><div class="text-xs text-silver">Split</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">Trail</div><div class="text-xs text-silver">Drawdown</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">$25K+</div><div class="text-xs text-silver">Account</div></div>
+          </div>
+          <a href="https://app.aquafutures.io/checkout?referral_id=HPF" target="_blank" rel="noopener" class="btn-primary text-xs py-2.5 text-center justify-center w-full">Visit Firm →</a>
+        </div>
+
+        <!-- #6 Blusky -->
+        <div class="card p-6 flex flex-col reveal d2">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="brand_assets/firms/blusky.webp" alt="Blusky" class="w-16 h-16 rounded-xl object-contain bg-white p-1.5"/>
+            <div>
+              <h3 class="text-base font-black">Blusky</h3>
+              <div class="stars text-xs">★★★★☆ <span class="text-silver ml-1">4.5</span></div>
+            </div>
+          </div>
+          <p class="text-silver text-xs mb-4 flex-1" style="line-height:1.75">Modern futures prop firm with a sleek platform and competitive profit splits. Great for traders who want a clean, no-nonsense evaluation experience.</p>
+          <div class="grid grid-cols-3 gap-2 mb-4">
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">85%</div><div class="text-xs text-silver">Split</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">1-Step</div><div class="text-xs text-silver">Eval</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">$25K+</div><div class="text-xs text-silver">Account</div></div>
+          </div>
+          <a href="https://trader.blusky.pro/sign-up?referral_id=HPF" target="_blank" rel="noopener" class="btn-primary text-xs py-2.5 text-center justify-center w-full">Visit Firm →</a>
+        </div>
+
+        <!-- #7 Traders Launch -->
+        <div class="card p-6 flex flex-col reveal">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="brand_assets/firms/traderslaunch.png" alt="Traders Launch" class="w-16 h-16 rounded-xl object-contain bg-white p-1.5"/>
+            <div>
+              <h3 class="text-base font-black">Traders Launch</h3>
+              <div class="stars text-xs">★★★★☆ <span class="text-silver ml-1">4.4</span></div>
+            </div>
+          </div>
+          <p class="text-silver text-xs mb-4 flex-1" style="line-height:1.75">Built for active futures traders across multiple sessions. Generous account scaling, a simple 1-step evaluation, and a growing community of funded traders.</p>
+          <div class="grid grid-cols-3 gap-2 mb-4">
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">80%</div><div class="text-xs text-silver">Split</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">1-Step</div><div class="text-xs text-silver">Eval</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">$25K+</div><div class="text-xs text-silver">Account</div></div>
+          </div>
+          <a href="https://app.traderslaunch.com/auth/sign-up?ref=68d51e331f191050342b1e1f" target="_blank" rel="noopener" class="btn-primary text-xs py-2.5 text-center justify-center w-full">Visit Firm →</a>
+        </div>
+
+        <!-- #8 Blueberry Futures -->
+        <div class="card p-6 flex flex-col reveal d1">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="brand_assets/firms/blueberryfutures.svg" alt="Blueberry Futures" class="w-16 h-16 rounded-xl object-contain bg-white p-1.5"/>
+            <div>
+              <h3 class="text-base font-black">Blueberry Futures</h3>
+              <div class="stars text-xs">★★★★☆ <span class="text-silver ml-1">4.4</span></div>
+            </div>
+          </div>
+          <p class="text-silver text-xs mb-4 flex-1" style="line-height:1.75">Solid evaluation structure with real-time performance tracking and a trader-first approach. Consistent payout history and responsive support team.</p>
+          <div class="grid grid-cols-3 gap-2 mb-4">
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">80%</div><div class="text-xs text-silver">Split</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">Trail</div><div class="text-xs text-silver">Drawdown</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">$25K+</div><div class="text-xs text-silver">Account</div></div>
+          </div>
+          <a href="https://portal.blueberryfutures.com/auth/signup?ref_code=YONG-8DF" target="_blank" rel="noopener" class="btn-primary text-xs py-2.5 text-center justify-center w-full">Visit Firm →</a>
+        </div>
+
+        <!-- #9 For Traders -->
+        <div class="card p-6 flex flex-col reveal d2">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="brand_assets/firms/fortraders.avif" alt="For Traders" class="w-16 h-16 rounded-xl object-contain bg-white p-1.5"/>
+            <div>
+              <h3 class="text-base font-black">For Traders</h3>
+              <div class="stars text-xs">★★★★☆ <span class="text-silver ml-1">4.3</span></div>
+            </div>
+          </div>
+          <p class="text-silver text-xs mb-4 flex-1" style="line-height:1.75">European-based prop firm with competitive spreads and multi-asset access. Ideal for traders who want exposure to global futures markets beyond US hours.</p>
+          <div class="grid grid-cols-3 gap-2 mb-4">
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">80%</div><div class="text-xs text-silver">Split</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">2-Step</div><div class="text-xs text-silver">Eval</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">$10K+</div><div class="text-xs text-silver">Account</div></div>
+          </div>
+          <a href="https://app.fortraders.com/trading/new-challenge?affiliateCode=5RPHRWDS2E" target="_blank" rel="noopener" class="btn-primary text-xs py-2.5 text-center justify-center w-full">Visit Firm →</a>
+        </div>
+
+        <!-- #10 Hyperticks -->
+        <div class="card p-6 flex flex-col reveal">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="brand_assets/firms/hyperticks.png" alt="Hyperticks" class="w-16 h-16 rounded-xl object-contain"/>
+            <div>
+              <h3 class="text-base font-black">Hyperticks</h3>
+              <div class="stars text-xs">★★★★☆ <span class="text-silver ml-1">4.2</span></div>
+            </div>
+          </div>
+          <p class="text-silver text-xs mb-4 flex-1" style="line-height:1.75">Speed-focused prop firm built for tick traders and high-frequency strategies. Use the discount code below at signup for your exclusive member discount.</p>
+          <div class="rounded-lg p-2.5 mb-3 flex items-center justify-between" style="background:#C9A22A0D;border:1px solid #C9A22A28">
+            <span class="text-xs font-black text-gold tracking-widest">hong0201</span>
+            <button onclick="navigator.clipboard.writeText('hong0201').then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',1500)})" class="text-xs text-cyan-DEFAULT border border-cyan-DEFAULT/30 hover:border-cyan-DEFAULT px-2 py-1 rounded transition-colors">Copy</button>
+          </div>
+          <a href="https://hyperticks.com" target="_blank" rel="noopener" class="btn-secondary text-xs py-2.5 text-center justify-center w-full">Visit Firm →</a>
+        </div>
+
+        <!-- #11 FundedSeat -->
+        <div class="card p-6 flex flex-col reveal d1">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="brand_assets/firms/fundedseat.png" alt="FundedSeat" class="w-16 h-16 rounded-xl object-contain bg-white p-1.5"/>
+            <div>
+              <h3 class="text-base font-black">FundedSeat</h3>
+              <div class="stars text-xs">★★★★☆ <span class="text-silver ml-1">4.1</span></div>
+            </div>
+          </div>
+          <p class="text-silver text-xs mb-4 flex-1" style="line-height:1.75">A newer entrant with competitive pricing and trader-friendly rules. Quickly building a reputation for fast approvals and reliable payout processing.</p>
+          <div class="grid grid-cols-3 gap-2 mb-4">
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">80%</div><div class="text-xs text-silver">Split</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">1-Step</div><div class="text-xs text-silver">Eval</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#00C9FF0A;border:1px solid #00C9FF15"><div class="text-xs font-black text-cyan-DEFAULT">$10K+</div><div class="text-xs text-silver">Account</div></div>
+          </div>
+          <a href="https://fundedseat.link/3lf25e" target="_blank" rel="noopener" class="btn-primary text-xs py-2.5 text-center justify-center w-full">Visit Firm →</a>
+        </div>
+
+      </div><!-- end futures grid -->
+    </div><!-- end tab-futures -->
+
+    <!-- ── CFD FIRMS ── -->
+    <div id="tab-cfd" class="firm-group">
+      <div class="grid md:grid-cols-2 gap-5 max-w-2xl mx-auto">
+
+        <!-- Funded Hive -->
+        <div class="card p-6 flex flex-col reveal">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="brand_assets/firms/fundedhive.svg" alt="Funded Hive" class="w-16 h-16 rounded-xl object-contain"/>
+            <div>
+              <h3 class="text-base font-black">Funded Hive</h3>
+              <div class="text-xs" style="color:#C9A22A">★★★★★ <span class="text-silver ml-1">5.0</span></div>
+            </div>
+          </div>
+          <p class="text-silver text-xs mb-4 flex-1" style="line-height:1.75">Top-rated CFD prop firm for forex, indices, and commodities. One of the best profit splits in the CFD space with fast, verifiable payouts.</p>
+          <div class="grid grid-cols-3 gap-2 mb-4">
+            <div class="text-center rounded-lg py-2" style="background:#C9A22A0A;border:1px solid #C9A22A18"><div class="text-xs font-black text-gold">80%</div><div class="text-xs text-silver">Split</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#C9A22A0A;border:1px solid #C9A22A18"><div class="text-xs font-black text-gold">2-Step</div><div class="text-xs text-silver">Eval</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#C9A22A0A;border:1px solid #C9A22A18"><div class="text-xs font-black text-gold">$5K+</div><div class="text-xs text-silver">Account</div></div>
+          </div>
+          <a href="https://fundedhive.com/?ref=MM7Y2JJ2TY" target="_blank" rel="noopener" class="btn-primary text-xs py-2.5 text-center justify-center w-full">Visit Firm →</a>
+        </div>
+
+        <!-- Alpha Capital -->
+        <div class="card p-6 flex flex-col reveal d1">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="brand_assets/firms/alphacapital.svg" alt="Alpha Capital" class="w-16 h-16 rounded-xl object-contain"/>
+            <div>
+              <h3 class="text-base font-black">Alpha Capital</h3>
+              <div class="text-xs" style="color:#C9A22A">★★★★★ <span class="text-silver ml-1">4.8</span></div>
+            </div>
+          </div>
+          <p class="text-silver text-xs mb-4 flex-1" style="line-height:1.75">UK-based CFD prop firm with a strong compliance track record and transparent evaluation. Excellent for forex and index CFD traders outside the US.</p>
+          <div class="grid grid-cols-3 gap-2 mb-4">
+            <div class="text-center rounded-lg py-2" style="background:#C9A22A0A;border:1px solid #C9A22A18"><div class="text-xs font-black text-gold">80%</div><div class="text-xs text-silver">Split</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#C9A22A0A;border:1px solid #C9A22A18"><div class="text-xs font-black text-gold">2-Step</div><div class="text-xs text-silver">Eval</div></div>
+            <div class="text-center rounded-lg py-2" style="background:#C9A22A0A;border:1px solid #C9A22A18"><div class="text-xs font-black text-gold">$10K+</div><div class="text-xs text-silver">Account</div></div>
+          </div>
+          <a href="https://app.alphacapitalgroup.uk/signup/8MBVZ" target="_blank" rel="noopener" class="btn-primary text-xs py-2.5 text-center justify-center w-full">Visit Firm →</a>
+        </div>
+
+      </div>
+    </div><!-- end tab-cfd -->
+
+    <p class="text-center text-silver/40 text-xs mt-8 reveal">* Affiliate links. Using my links supports this channel at no extra cost to you. Rankings based on community scores &amp; editorial review.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     6. MARKET BRIEFING
+══════════════════════════════════════════════ -->
+<section id="market" class="relative z-10 py-24 border-t border-cyan-DEFAULT/10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+      <div class="reveal">
+        <span class="tag mb-3">Daily Update</span>
+        <h2 class="text-4xl md:text-5xl font-black tracking-tightest mt-3">Market <span class="text-cyan-DEFAULT">Briefing</span></h2>
+      </div>
+      <p class="text-silver text-sm reveal d1 md:max-w-xs" style="line-height:1.75">Key levels, macro events, and futures opportunities updated daily for funded traders.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
+      <!-- S&P500 -->
+      <div class="card p-5 reveal">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-xs font-bold text-silver">S&amp;P 500 / ES</span>
+          <span class="text-green-400 text-xs font-bold">▲ +0.42%</span>
+        </div>
+        <div class="text-2xl font-black mb-1">5,842</div>
+        <div class="prog-bar w-3/4 mb-3"></div>
+        <div class="text-xs text-silver" style="line-height:1.6">Support: 5,780<br/>Resistance: 5,890<br/>Bias: Bullish</div>
+      </div>
+      <!-- Nasdaq -->
+      <div class="card p-5 reveal d1">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-xs font-bold text-silver">Nasdaq / NQ</span>
+          <span class="text-green-400 text-xs font-bold">▲ +0.61%</span>
+        </div>
+        <div class="text-2xl font-black mb-1">20,384</div>
+        <div class="prog-bar w-4/5 mb-3"></div>
+        <div class="text-xs text-silver" style="line-height:1.6">Support: 20,100<br/>Resistance: 20,600<br/>Bias: Bullish</div>
+      </div>
+      <!-- Gold -->
+      <div class="card p-5 reveal d2">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-xs font-bold text-silver">Gold / GC</span>
+          <span class="text-green-400 text-xs font-bold">▲ +0.33%</span>
+        </div>
+        <div class="text-2xl font-black mb-1">2,318</div>
+        <div class="prog-bar w-2/3 mb-3"></div>
+        <div class="text-xs text-silver" style="line-height:1.6">Support: 2,280<br/>Resistance: 2,360<br/>Bias: Neutral</div>
+      </div>
+      <!-- Oil -->
+      <div class="card p-5 reveal d3">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-xs font-bold text-silver">Crude Oil / CL</span>
+          <span class="text-red-400 text-xs font-bold">▼ -0.18%</span>
+        </div>
+        <div class="text-2xl font-black mb-1">77.23</div>
+        <div class="prog-bar w-1/2 mb-3" style="background:linear-gradient(90deg,#ef4444,#991b1b)"></div>
+        <div class="text-xs text-silver" style="line-height:1.6">Support: 75.80<br/>Resistance: 79.40<br/>Bias: Bearish</div>
+      </div>
+      <!-- USD Index -->
+      <div class="card p-5 reveal d4">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-xs font-bold text-silver">USD Index / DXY</span>
+          <span class="text-red-400 text-xs font-bold">▼ -0.09%</span>
+        </div>
+        <div class="text-2xl font-black mb-1">104.28</div>
+        <div class="prog-bar w-1/2 mb-3" style="background:linear-gradient(90deg,#ef4444,#991b1b)"></div>
+        <div class="text-xs text-silver" style="line-height:1.6">Support: 103.60<br/>Resistance: 105.00<br/>Bias: Neutral</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     7. TRADING STRATEGY HUB
+══════════════════════════════════════════════ -->
+<section id="strategies" class="s-glow relative z-10 py-24 border-t border-cyan-DEFAULT/10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12 reveal">
+      <span class="tag mb-4">Education</span>
+      <h2 class="text-4xl md:text-5xl font-black tracking-tightest mt-4 mb-4">Trade With <span class="text-cyan-DEFAULT">Structure</span></h2>
+      <p class="text-silver text-sm max-w-xl mx-auto" style="line-height:1.75">Strategy frameworks tested on real funded accounts. Learn how to pass evaluations and stay funded.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="card strat-card p-6 reveal">
+        <div class="strat-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background:#00C9FF15;border:1px solid #00C9FF30">
+          <svg width="22" height="22" fill="none" stroke="#00C9FF" stroke-width="2" viewBox="0 0 24 24"><path d="M13 17l5-5-5-5M6 17l5-5-5-5"/></svg>
+        </div>
+        <h3 class="font-bold mb-2">Breakout Strategy</h3>
+        <p class="text-silver text-xs" style="line-height:1.75">Identify high-probability breakout setups in ES and NQ using volume and price action. Ideal for morning session and news events.</p>
+      </div>
+      <div class="card strat-card p-6 reveal d1">
+        <div class="strat-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background:#00C9FF15;border:1px solid #00C9FF30">
+          <svg width="22" height="22" fill="none" stroke="#00C9FF" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+        </div>
+        <h3 class="font-bold mb-2">Trend Following</h3>
+        <p class="text-silver text-xs" style="line-height:1.75">Trade with the macro trend using moving averages and market structure. Consistent results over time with controlled drawdown.</p>
+      </div>
+      <div class="card strat-card p-6 reveal d2">
+        <div class="strat-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background:#00C9FF15;border:1px solid #00C9FF30">
+          <svg width="22" height="22" fill="none" stroke="#00C9FF" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3 class="font-bold mb-2">Scalping</h3>
+        <p class="text-silver text-xs" style="line-height:1.75">Fast, structured scalps during high-liquidity windows. Strict risk management rules designed specifically to protect funded accounts.</p>
+      </div>
+      <div class="card strat-card p-6 reveal">
+        <div class="strat-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background:#00C9FF15;border:1px solid #00C9FF30">
+          <svg width="22" height="22" fill="none" stroke="#00C9FF" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+        </div>
+        <h3 class="font-bold mb-2">Order Flow</h3>
+        <p class="text-silver text-xs" style="line-height:1.75">Read the tape and footprint charts to understand real buying and selling pressure. Institutional-grade edge for serious traders.</p>
+      </div>
+      <div class="card strat-card p-6 reveal d1">
+        <div class="strat-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background:#00C9FF15;border:1px solid #00C9FF30">
+          <svg width="22" height="22" fill="none" stroke="#00C9FF" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="font-bold mb-2">Risk Management</h3>
+        <p class="text-silver text-xs" style="line-height:1.75">Position sizing, stop placement, and daily loss limits structured to keep you in the game and protect your funded account from violations.</p>
+      </div>
+      <div class="card strat-card p-6 reveal d2">
+        <div class="strat-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background:#00C9FF15;border:1px solid #00C9FF30">
+          <svg width="22" height="22" fill="none" stroke="#00C9FF" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/></svg>
+        </div>
+        <h3 class="font-bold mb-2">Funded Account Survival</h3>
+        <p class="text-silver text-xs" style="line-height:1.75">The exact rules, habits, and mindset shifts that separate traders who stay funded from those who blow up in the first week.</p>
+      </div>
+    </div>
+    <div class="text-center mt-10 reveal">
+      <a href="#youtube" class="btn-secondary">Explore Strategies on YouTube →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     8. FEATURED REVIEWS
+══════════════════════════════════════════════ -->
+<section id="reviews" class="relative z-10 py-24 border-t border-cyan-DEFAULT/10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+      <div class="reveal">
+        <span class="tag mb-3">Editorial</span>
+        <h2 class="text-4xl md:text-5xl font-black tracking-tightest mt-3">Latest Reviews <span class="text-cyan-DEFAULT">&amp; Analysis</span></h2>
+      </div>
+      <a href="#firms" class="btn-ghost text-sm reveal d1">Read All Reviews →</a>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="card p-6 reveal relative overflow-hidden">
+        <div class="absolute top-0 left-0 right-0 h-1" style="background:linear-gradient(90deg,#FFD700,#C9A22A)"></div>
+        <span class="tag-gold tag text-xs mb-3">Top Pick</span>
+        <h3 class="font-black text-base mb-2 mt-2">Best Futures Prop Firms 2026</h3>
+        <p class="text-silver text-xs mb-4" style="line-height:1.75">Full ranking of every futures prop firm reviewed — rules, payouts, fees, and which ones actually pay their traders on time.</p>
+        <div class="flex items-center justify-between">
+          <span class="text-xs text-silver/50">Howard PropFirm · 2026</span>
+          <a href="#firms" class="text-xs font-bold text-cyan-DEFAULT hover:underline">Read →</a>
+        </div>
+      </div>
+      <div class="card p-6 reveal d1">
+        <span class="tag text-xs mb-3">Review</span>
+        <h3 class="font-black text-base mb-2 mt-2">One Up Trader — Full Review</h3>
+        <p class="text-silver text-xs mb-4" style="line-height:1.75">Deep dive into One Up Trader's rules, payout model, drawdown structure, and whether it's the right fit for your trading style.</p>
+        <div class="flex items-center justify-between">
+          <span class="text-xs text-silver/50">Howard PropFirm · 2026</span>
+          <a href="https://oneuptrader.com?tap_a=37351-37964c&tap_s=9801617-b41bf1" target="_blank" rel="noopener" class="text-xs font-bold text-cyan-DEFAULT hover:underline">Read →</a>
+        </div>
+      </div>
+      <div class="card p-6 reveal d2">
+        <span class="tag text-xs mb-3">Review</span>
+        <h3 class="font-black text-base mb-2 mt-2">Blue Guardian — Full Review</h3>
+        <p class="text-silver text-xs mb-4" style="line-height:1.75">Is Blue Guardian the most trader-friendly futures prop firm? We break down their no-daily-limit rules and payout track record.</p>
+        <div class="flex items-center justify-between">
+          <span class="text-xs text-silver/50">Howard PropFirm · 2026</span>
+          <a href="https://blueguardian.com/?afmc=HPF" target="_blank" rel="noopener" class="text-xs font-bold text-cyan-DEFAULT hover:underline">Read →</a>
+        </div>
+      </div>
+      <div class="card p-6 reveal">
+        <span class="tag text-xs mb-3">Analysis</span>
+        <h3 class="font-black text-base mb-2 mt-2">Hidden Rules Traders Miss</h3>
+        <p class="text-silver text-xs mb-4" style="line-height:1.75">The fine-print clauses and evaluation rules that trip up traders — and how to avoid the most common prop firm violations.</p>
+        <div class="flex items-center justify-between">
+          <span class="text-xs text-silver/50">Howard PropFirm · 2026</span>
+          <a href="#youtube" class="text-xs font-bold text-cyan-DEFAULT hover:underline">Watch →</a>
+        </div>
+      </div>
+      <div class="card p-6 reveal d1">
+        <span class="tag text-xs mb-3">Comparison</span>
+        <h3 class="font-black text-base mb-2 mt-2">Trailing vs Static Drawdown Explained</h3>
+        <p class="text-silver text-xs mb-4" style="line-height:1.75">Which drawdown model is right for your strategy? A clear breakdown of trailing vs static drawdown with real trade examples.</p>
+        <div class="flex items-center justify-between">
+          <span class="text-xs text-silver/50">Howard PropFirm · 2026</span>
+          <a href="#youtube" class="text-xs font-bold text-cyan-DEFAULT hover:underline">Watch →</a>
+        </div>
+      </div>
+      <div class="card p-6 reveal d2">
+        <span class="tag text-xs mb-3">Review</span>
+        <h3 class="font-black text-base mb-2 mt-2">Bulenox — Full Review</h3>
+        <p class="text-silver text-xs mb-4" style="line-height:1.75">Bulenox ranks #3 in our 2026 futures list. Here's why — and what to watch out for before signing up for their evaluation.</p>
+        <div class="flex items-center justify-between">
+          <span class="text-xs text-silver/50">Howard PropFirm · 2026</span>
+          <a href="https://bulenox.com/member/aff/go/hong0201" target="_blank" rel="noopener" class="text-xs font-bold text-cyan-DEFAULT hover:underline">Read →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     9. YOUTUBE SECTION
+══════════════════════════════════════════════ -->
+<section id="youtube" class="s-glow relative z-10 py-24 border-t border-cyan-DEFAULT/10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12 reveal">
+      <span class="tag mb-4">
+        <svg width="14" height="14" fill="#00C9FF" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#060D1A"/></svg>
+        YouTube Channel
+      </span>
+      <h2 class="text-4xl md:text-5xl font-black tracking-tightest mt-4 mb-4">Watch <span class="text-cyan-DEFAULT">Howard PropFirm</span></h2>
+      <p class="text-silver text-sm max-w-xl mx-auto" style="line-height:1.75">Prop reviews, market outlook, strategy tutorials, and funded trader psychology. New videos every week.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+      <div class="card p-5 reveal strat-card">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style="background:#00C9FF15;border:1px solid #00C9FF30">
+          <svg width="18" height="18" fill="none" stroke="#00C9FF" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm0 0V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10"/></svg>
+        </div>
+        <h4 class="font-bold text-sm mb-1">Prop Reviews</h4>
+        <p class="text-silver text-xs" style="line-height:1.6">Honest, in-depth reviews of every major futures and CFD prop firm.</p>
+      </div>
+      <div class="card p-5 reveal d1 strat-card">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style="background:#00C9FF15;border:1px solid #00C9FF30">
+          <svg width="18" height="18" fill="none" stroke="#00C9FF" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/></svg>
+        </div>
+        <h4 class="font-bold text-sm mb-1">Market Outlook</h4>
+        <p class="text-silver text-xs" style="line-height:1.6">Weekly futures market analysis with key levels and trade setups.</p>
+      </div>
+      <div class="card p-5 reveal d2 strat-card">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style="background:#00C9FF15;border:1px solid #00C9FF30">
+          <svg width="18" height="18" fill="none" stroke="#00C9FF" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h4 class="font-bold text-sm mb-1">Strategy Tutorials</h4>
+        <p class="text-silver text-xs" style="line-height:1.6">Step-by-step strategy breakdowns built for funded account rules.</p>
+      </div>
+      <div class="card p-5 reveal d3 strat-card">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style="background:#00C9FF15;border:1px solid #00C9FF30">
+          <svg width="18" height="18" fill="none" stroke="#00C9FF" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+        </div>
+        <h4 class="font-bold text-sm mb-1">Trader Psychology</h4>
+        <p class="text-silver text-xs" style="line-height:1.6">Mindset, discipline, and the mental edge that keeps funded traders in the game.</p>
+      </div>
+    </div>
+    <div class="text-center reveal">
+      <a href="https://youtube.com/@HowardPropfirm" target="_blank" rel="noopener" class="btn-primary px-10 py-4">
+        <svg width="18" height="18" fill="#060D1A" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#07111F"/></svg>
+        Subscribe on YouTube
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     10. NEWSLETTER FUNNEL
+══════════════════════════════════════════════ -->
+<section id="newsletter" class="relative z-10 py-24 border-t border-cyan-DEFAULT/10 overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse 70% 60% at 50% 50%,#00C9FF0C 0%,transparent 70%)"></div>
+  <div class="max-w-4xl mx-auto px-6 relative z-10">
+    <div class="card-featured card p-10 md:p-14 rounded-2xl text-center reveal">
+      <span class="tag mb-4">Free Resource</span>
+      <h2 class="text-3xl md:text-5xl font-black tracking-tightest mt-4 mb-4">Get the Funded Trader<br/><span class="text-cyan-DEFAULT">Starter Kit</span></h2>
+      <p class="text-silver mb-8 max-w-lg mx-auto text-sm" style="line-height:1.75">Everything you need to choose the right prop firm and pass your first evaluation. Free, instantly downloadable.</p>
+      <div class="grid sm:grid-cols-2 gap-3 max-w-xl mx-auto mb-8 text-left">
+        <div class="flex items-center gap-2 text-sm"><span class="text-cyan-DEFAULT font-bold">✓</span><span class="text-silver">Best prop firms comparison chart</span></div>
+        <div class="flex items-center gap-2 text-sm"><span class="text-cyan-DEFAULT font-bold">✓</span><span class="text-silver">Drawdown rules explained simply</span></div>
+        <div class="flex items-center gap-2 text-sm"><span class="text-cyan-DEFAULT font-bold">✓</span><span class="text-silver">Risk management checklist</span></div>
+        <div class="flex items-center gap-2 text-sm"><span class="text-cyan-DEFAULT font-bold">✓</span><span class="text-silver">Market prep template (daily)</span></div>
+      </div>
+      <form onsubmit="handleNewsletterSubmit(event)" class="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto">
+        <input type="text" placeholder="First name" class="flex-1 bg-navy-800/80 border border-cyan-DEFAULT/25 rounded-lg px-4 py-3 text-sm text-white placeholder-silver/50 focus:outline-none focus:border-cyan-DEFAULT transition-colors" required/>
+        <input type="email" placeholder="Email address" class="flex-1 bg-navy-800/80 border border-cyan-DEFAULT/25 rounded-lg px-4 py-3 text-sm text-white placeholder-silver/50 focus:outline-none focus:border-cyan-DEFAULT transition-colors" required/>
+        <button type="submit" class="btn-primary px-6 py-3 text-sm whitespace-nowrap">Download Free Guide</button>
+      </form>
+      <p class="text-xs text-silver/40 mt-4">No spam. Unsubscribe anytime. Your email is safe.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     11. WHY HOWARD PROPFIRM
+══════════════════════════════════════════════ -->
+<section id="about" class="relative z-10 py-24 border-t border-cyan-DEFAULT/10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12 reveal">
+      <span class="tag mb-4">Why Us</span>
+      <h2 class="text-4xl md:text-5xl font-black tracking-tightest mt-4">Why <span class="text-cyan-DEFAULT">Howard PropFirm</span></h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card p-8 text-center reveal">
+        <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5" style="background:#00C9FF15;border:1px solid #00C9FF30">
+          <svg width="28" height="28" fill="none" stroke="#00C9FF" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="text-xl font-black mb-3">Independent</h3>
+        <p class="text-silver text-sm" style="line-height:1.75">No firm pays us for a positive review. Every ranking and recommendation is based on real trading experience and community data — not sponsorships.</p>
+      </div>
+      <div class="card p-8 text-center reveal d1">
+        <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5" style="background:#00C9FF15;border:1px solid #00C9FF30">
+          <svg width="28" height="28" fill="none" stroke="#00C9FF" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+        </div>
+        <h3 class="text-xl font-black mb-3">Professional</h3>
+        <p class="text-silver text-sm" style="line-height:1.75">Research-driven education built on years of live futures trading. We explain the rules, risks, and nuances that matter for funded account success.</p>
+      </div>
+      <div class="card p-8 text-center reveal d2">
+        <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5" style="background:#00C9FF15;border:1px solid #00C9FF30">
+          <svg width="28" height="28" fill="none" stroke="#00C9FF" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 class="text-xl font-black mb-3">Trader Focused</h3>
+        <p class="text-silver text-sm" style="line-height:1.75">Built for serious traders, not beginners looking for get-rich schemes. Our content is direct, no-fluff, and designed to help you stay funded longer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     12. TESTIMONIALS
+══════════════════════════════════════════════ -->
+<section class="s-glow relative z-10 py-24 border-t border-cyan-DEFAULT/10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12 reveal">
+      <span class="tag mb-4">Community</span>
+      <h2 class="text-4xl md:text-5xl font-black tracking-tightest mt-4">Traders Are <span class="text-cyan-DEFAULT">Getting Funded</span></h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-5">
+      <div class="card p-7 reveal">
+        <div class="stars mb-4">★★★★★</div>
+        <p class="text-silver text-sm mb-5" style="line-height:1.75">"Howard PropFirm helped me choose the right evaluation model. I'd wasted money on two firms before finding this channel. Now I'm trading a funded $150K account."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm text-cyan-DEFAULT" style="background:#00C9FF18">JM</div>
+          <div><div class="font-semibold text-sm">James M.</div><div class="text-xs text-silver">ES &amp; NQ Trader · Texas</div></div>
+        </div>
+      </div>
+      <div class="card p-7 reveal d1">
+        <div class="stars mb-4">★★★★★</div>
+        <p class="text-silver text-sm mb-5" style="line-height:1.75">"Best funded trading educational resource I've found. The prop firm comparison alone saved me hours of research and got me straight to One Up Trader."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm text-cyan-DEFAULT" style="background:#00C9FF18">SR</div>
+          <div><div class="font-semibold text-sm">Sophia R.</div><div class="text-xs text-silver">Crude Oil Trader · Dubai</div></div>
+        </div>
+      </div>
+      <div class="card p-7 reveal d2">
+        <div class="stars mb-4">★★★★★</div>
+        <p class="text-silver text-sm mb-5" style="line-height:1.75">"The hidden rules breakdown video alone is worth subscribing for. Avoided two violations I didn't even know existed. Finally passed my Bulenox eval."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm text-cyan-DEFAULT" style="background:#00C9FF18">KL</div>
+          <div><div class="font-semibold text-sm">Kevin L.</div><div class="text-xs text-silver">Micro Futures · UK</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     13. FOOTER
+══════════════════════════════════════════════ -->
+<footer class="relative z-10 border-t border-cyan-DEFAULT/10 pt-16 pb-8" style="background:#07111F">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+      <!-- Brand -->
+      <div class="lg:col-span-2">
+        <img src="brand_assets/Logo.png" alt="Howard PropFirm" class="h-20 w-auto mb-4" style="mix-blend-mode:screen"/>
+        <p class="text-silver text-sm max-w-xs mb-5" style="line-height:1.75">Independent futures trading research, prop firm reviews, and strategy education for serious funded traders worldwide.</p>
+        <div class="flex gap-2">
+          <a href="https://youtube.com/@HowardPropfirm" target="_blank" rel="noopener" class="w-9 h-9 rounded-lg flex items-center justify-center transition-colors hover:bg-cyan-DEFAULT/20" style="background:#00C9FF12;border:1px solid #00C9FF20">
+            <svg width="15" height="15" fill="#00C9FF" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#07111F"/></svg>
+          </a>
+          <a href="#" class="w-9 h-9 rounded-lg flex items-center justify-center transition-colors hover:bg-cyan-DEFAULT/20" style="background:#00C9FF12;border:1px solid #00C9FF20">
+            <svg width="13" height="13" fill="#00C9FF" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="w-9 h-9 rounded-lg flex items-center justify-center transition-colors hover:bg-cyan-DEFAULT/20" style="background:#00C9FF12;border:1px solid #00C9FF20">
+            <svg width="13" height="13" fill="#00C9FF" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path fill="#07111F" d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#07111F" stroke-width="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- Company -->
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-widest text-silver/40 mb-4">Company</h4>
+        <div class="flex flex-col gap-2.5">
+          <a href="#about" class="text-sm text-silver hover:text-white transition-colors">About</a>
+          <a href="#" class="text-sm text-silver hover:text-white transition-colors">Contact</a>
+          <a href="#" class="text-sm text-silver hover:text-white transition-colors">Partner With Us</a>
+        </div>
+      </div>
+      <!-- Resources -->
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-widest text-silver/40 mb-4">Resources</h4>
+        <div class="flex flex-col gap-2.5">
+          <a href="#reviews" class="text-sm text-silver hover:text-white transition-colors">Prop Firm Reviews</a>
+          <a href="#firms" class="text-sm text-silver hover:text-white transition-colors">Compare Firms</a>
+          <a href="#strategies" class="text-sm text-silver hover:text-white transition-colors">Strategies</a>
+          <a href="#newsletter" class="text-sm text-silver hover:text-white transition-colors">Free Newsletter</a>
+        </div>
+      </div>
+      <!-- Legal -->
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-widest text-silver/40 mb-4">Legal</h4>
+        <div class="flex flex-col gap-2.5">
+          <a href="#" class="text-sm text-silver hover:text-white transition-colors">Affiliate Disclosure</a>
+          <a href="#" class="text-sm text-silver hover:text-white transition-colors">Disclaimer</a>
+          <a href="#" class="text-sm text-silver hover:text-white transition-colors">Privacy Policy</a>
+          <a href="#" class="text-sm text-silver hover:text-white transition-colors">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+    <div class="glow-line mb-6"></div>
+    <div class="flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-silver/40">
+      <span>© 2026 Howard PropFirm. All rights reserved.</span>
+      <span>Futures trading involves substantial risk. Past performance is not indicative of future results. This site contains affiliate links — see our <a href="#" class="underline hover:text-silver">disclosure</a>.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════
+     SCRIPTS
+══════════════════════════════════════════════ -->
+<script>
+// Nav scroll
+const navbar=document.getElementById('navbar');
+window.addEventListener('scroll',()=>{
+  if(window.scrollY>60){navbar.classList.add('nav-solid');navbar.classList.remove('nav-transparent')}
+  else{navbar.classList.add('nav-solid')}
+},{ passive:true });
+
+// Hamburger
+const ham=document.getElementById('ham');
+const mmenu=document.getElementById('mmenu');
+const hopen=document.getElementById('hopen');
+const hclose=document.getElementById('hclose');
+ham.addEventListener('click',()=>{
+  mmenu.classList.toggle('open');
+  hopen.classList.toggle('hidden');
+  hclose.classList.toggle('hidden');
+});
+mmenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  mmenu.classList.remove('open');
+  hopen.classList.remove('hidden');
+  hclose.classList.add('hidden');
+}));
+
+// Filter tabs
+function filterFirms(tab, btn){
+  document.querySelectorAll('.filter-tab').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('tab-futures').classList.remove('active');
+  document.getElementById('tab-cfd').classList.remove('active');
+  document.getElementById('tab-'+tab).classList.add('active');
+}
+
+// No reveal animation — content always visible
+
+// Newsletter
+function handleNewsletterSubmit(e){
+  e.preventDefault();
+  const btn=e.target.querySelector('button[type="submit"]');
+  btn.textContent='Thanks! Check your email.';
+  btn.disabled=true;
+  btn.style.opacity='0.7';
+}
+</script>
+</body>
+</html>

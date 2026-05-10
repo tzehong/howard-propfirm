@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Réteg_1" data-name="Réteg 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 110.9 27">
+  <defs>
+    <linearGradient id="Névtelen_színátmenet_9" data-name="Névtelen színátmenet 9" x1="8.86" y1="42.27" x2="22.84" y2="24.19" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fbf5b5"/>
+      <stop offset=".5" stop-color="#fecc58"/>
+      <stop offset="1" stop-color="#fecc58"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_2" data-name="Névtelen színátmenet 2" x1="29.3" y1="37.52" x2="19.41" y2="34.27" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#61240c"/>
+      <stop offset="1" stop-color="#61240c" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_3" data-name="Névtelen színátmenet 3" x1="13.17" y1="26.89" x2="6.28" y2="26.89" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#61240c"/>
+      <stop offset="1" stop-color="#7a3c16" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_4" data-name="Névtelen színátmenet 4" x1="5.43" y1="30.22" x2="26.43" y2="30.22" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8e491e"/>
+      <stop offset="1" stop-color="#8e491e"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_5" data-name="Névtelen színátmenet 5" x1="5.43" y1="41.75" x2="26.43" y2="41.75" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a86f31"/>
+      <stop offset=".52" stop-color="#e2a247"/>
+      <stop offset="1" stop-color="#69220d"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_6" data-name="Névtelen színátmenet 6" x1="3.91" y1="23.18" x2="27.95" y2="23.18" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#722f10"/>
+      <stop offset=".52" stop-color="#58260d"/>
+      <stop offset="1" stop-color="#601c04"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_7" data-name="Névtelen színátmenet 7" x1="3.91" y1="36.45" x2="27.95" y2="36.45" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f1f2f2"/>
+      <stop offset=".52" stop-color="#fbf2be"/>
+      <stop offset="1" stop-color="#f0da93"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_8" data-name="Névtelen színátmenet 8" x1="6.72" y1="33.13" x2="25.14" y2="33.13" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fed26c"/>
+      <stop offset=".27" stop-color="#fad577"/>
+      <stop offset=".49" stop-color="#f2d98a"/>
+      <stop offset=".75" stop-color="#c7833d"/>
+      <stop offset="1" stop-color="#fdcb58"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_11" data-name="Névtelen színátmenet 11" x1="15.93" y1="29.13" x2="15.93" y2="28.45" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe378"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_11-2" data-name="Névtelen színátmenet 11" x1="15.97" y1="27.44" x2="15.97" y2="26.8" xlink:href="#Névtelen_színátmenet_11"/>
+    <linearGradient id="Névtelen_színátmenet_11-3" data-name="Névtelen színátmenet 11" x1="15.88" y1="30.66" x2="15.88" y2="30.44" xlink:href="#Névtelen_színátmenet_11"/>
+    <linearGradient id="Névtelen_színátmenet_14" data-name="Névtelen színátmenet 14" x1="13.64" y1="30.94" x2="18.21" y2="30.94" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1b0e03"/>
+      <stop offset=".13" stop-color="#6c4513"/>
+      <stop offset=".24" stop-color="#d1932f"/>
+      <stop offset=".36" stop-color="#f9fbd5"/>
+      <stop offset=".51" stop-color="#fde27b"/>
+      <stop offset=".63" stop-color="#d19c44"/>
+      <stop offset=".74" stop-color="#684419"/>
+      <stop offset=".75" stop-color="#654218"/>
+      <stop offset=".79" stop-color="#442c10"/>
+      <stop offset=".84" stop-color="#2a1b0a"/>
+      <stop offset=".89" stop-color="#180f06"/>
+      <stop offset=".94" stop-color="#0d0703"/>
+      <stop offset="1" stop-color="#090502"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_14-2" data-name="Névtelen színátmenet 14" y1="29.17" x2="18.28" y2="29.17" xlink:href="#Névtelen_színátmenet_14"/>
+    <linearGradient id="Névtelen_színátmenet_14-3" data-name="Névtelen színátmenet 14" x1="13.7" y1="27.65" y2="27.65" xlink:href="#Névtelen_színátmenet_14"/>
+    <linearGradient id="Névtelen_színátmenet_73" data-name="Névtelen színátmenet 73" x1="20.86" y1="28.62" x2="20.33" y2="28.36" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f5f0a5"/>
+      <stop offset="1" stop-color="#d69e46"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_73-2" data-name="Névtelen színátmenet 73" x1="20.66" y1="29.47" x2="20.28" y2="29.41" xlink:href="#Névtelen_színátmenet_73"/>
+    <linearGradient id="Névtelen_színátmenet_73-3" data-name="Névtelen színátmenet 73" x1="20.37" y1="30.7" x2="19.89" y2="30.57" xlink:href="#Névtelen_színátmenet_73"/>
+    <linearGradient id="Névtelen_színátmenet_73-4" data-name="Névtelen színátmenet 73" x1="19.92" y1="32" x2="19.07" y2="31.77" xlink:href="#Névtelen_színátmenet_73"/>
+    <linearGradient id="Névtelen_színátmenet_32" data-name="Névtelen színátmenet 32" x1="20.11" y1="28.98" x2="19.3" y2="28.63" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d69e46"/>
+      <stop offset="1" stop-color="#f5f0a5"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_73-5" data-name="Névtelen színátmenet 73" x1="19.15" y1="31.85" x2="18.63" y2="31.69" xlink:href="#Névtelen_színátmenet_73"/>
+    <linearGradient id="Névtelen_színátmenet_73-6" data-name="Névtelen színátmenet 73" x1="19.66" y1="30.41" x2="19.09" y2="30.29" xlink:href="#Névtelen_színátmenet_73"/>
+    <linearGradient id="Névtelen_színátmenet_32-2" data-name="Névtelen színátmenet 32" x1="19.73" y1="27.56" x2="19.55" y2="27.56" xlink:href="#Névtelen_színátmenet_32"/>
+    <linearGradient id="Névtelen_színátmenet_32-3" data-name="Névtelen színátmenet 32" x1="20.17" y1="26.86" x2="19.59" y2="26.86" xlink:href="#Névtelen_színátmenet_32"/>
+    <linearGradient id="Névtelen_színátmenet_73-7" data-name="Névtelen színátmenet 73" x1="11.04" y1="28.58" x2="11.57" y2="28.32" xlink:href="#Névtelen_színátmenet_73"/>
+    <linearGradient id="Névtelen_színátmenet_73-8" data-name="Névtelen színátmenet 73" x1="11.24" y1="29.43" x2="11.62" y2="29.37" xlink:href="#Névtelen_színátmenet_73"/>
+    <linearGradient id="Névtelen_színátmenet_73-9" data-name="Névtelen színátmenet 73" x1="11.53" y1="30.66" x2="12.01" y2="30.53" xlink:href="#Névtelen_színátmenet_73"/>
+    <linearGradient id="Névtelen_színátmenet_73-10" data-name="Névtelen színátmenet 73" x1="11.98" y1="31.96" x2="12.84" y2="31.73" xlink:href="#Névtelen_színátmenet_73"/>
+    <linearGradient id="Névtelen_színátmenet_32-4" data-name="Névtelen színátmenet 32" x1="11.79" y1="28.94" x2="12.6" y2="28.59" xlink:href="#Névtelen_színátmenet_32"/>
+    <linearGradient id="Névtelen_színátmenet_73-11" data-name="Névtelen színátmenet 73" x1="12.75" y1="31.81" x2="13.28" y2="31.66" xlink:href="#Névtelen_színátmenet_73"/>
+    <linearGradient id="Névtelen_színátmenet_73-12" data-name="Névtelen színátmenet 73" x1="12.24" y1="30.37" x2="12.81" y2="30.25" xlink:href="#Névtelen_színátmenet_73"/>
+    <linearGradient id="Névtelen_színátmenet_32-5" data-name="Névtelen színátmenet 32" x1="12.17" y1="27.52" x2="12.35" y2="27.52" xlink:href="#Névtelen_színátmenet_32"/>
+    <linearGradient id="Névtelen_színátmenet_32-6" data-name="Névtelen színátmenet 32" x1="11.74" y1="26.83" x2="12.31" y2="26.83" xlink:href="#Névtelen_színátmenet_32"/>
+    <linearGradient id="Névtelen_színátmenet_33" data-name="Névtelen színátmenet 33" x1="5.43" y1="32.29" x2="14.7" y2="32.29" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ede5d9"/>
+      <stop offset=".3" stop-color="#e9c98a"/>
+      <stop offset=".65" stop-color="#653606"/>
+      <stop offset=".86" stop-color="#482900"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_34" data-name="Névtelen színátmenet 34" x1="9.23" y1="31.16" x2="9.23" y2="32.29" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8b5512"/>
+      <stop offset=".48" stop-color="#8b5512"/>
+      <stop offset="1" stop-color="#74480e"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_35" data-name="Névtelen színátmenet 35" x1="6.53" y1="32.57" x2="9.71" y2="32.57" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a88c53"/>
+      <stop offset="1" stop-color="#fade93"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_36" data-name="Névtelen színátmenet 36" x1="1.17" y1="35.53" x2="14.51" y2="35.53" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5b3509"/>
+      <stop offset=".18" stop-color="#896328"/>
+      <stop offset=".31" stop-color="#b08e4c"/>
+      <stop offset=".56" stop-color="#fefdc5"/>
+      <stop offset=".6" stop-color="#eee2a4"/>
+      <stop offset=".7" stop-color="#c59e52"/>
+      <stop offset=".75" stop-color="#af7a26"/>
+      <stop offset="1" stop-color="#513000"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_37" data-name="Névtelen színátmenet 37" x1="5.32" y1="34.14" x2="13.85" y2="34.14" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fdf3bb"/>
+      <stop offset=".5" stop-color="#e0bf76"/>
+      <stop offset="1" stop-color="#976933"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_38" data-name="Névtelen színátmenet 38" x1="1.15" y1="35.99" x2="13.38" y2="35.99" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4f2d08"/>
+      <stop offset=".17" stop-color="#4f2d08"/>
+      <stop offset=".54" stop-color="#f8ecbd"/>
+      <stop offset="1" stop-color="#a97628"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_39" data-name="Névtelen színátmenet 39" x1="1.06" y1="35.55" x2="14.45" y2="35.55" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#feedd0"/>
+      <stop offset=".43" stop-color="#fffefe"/>
+      <stop offset=".46" stop-color="#faf3eb"/>
+      <stop offset=".56" stop-color="#ecd6b8"/>
+      <stop offset=".66" stop-color="#e0bd8e"/>
+      <stop offset=".75" stop-color="#d7aa6d"/>
+      <stop offset=".84" stop-color="#d09d56"/>
+      <stop offset=".93" stop-color="#cc9548"/>
+      <stop offset="1" stop-color="#cb9243"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_40" data-name="Névtelen színátmenet 40" x1="2.51" y1="34.22" x2="7.88" y2="34.22" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset=".18" stop-color="#5d3409"/>
+      <stop offset=".43" stop-color="#fef5b7"/>
+      <stop offset=".64" stop-color="#604110"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_41" data-name="Névtelen színátmenet 41" x1="6.58" y1="32.77" x2="13.26" y2="32.77" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fde6a4"/>
+      <stop offset=".46" stop-color="#fef9b1"/>
+      <stop offset=".57" stop-color="#a8772b"/>
+      <stop offset=".72" stop-color="#f0d59b"/>
+      <stop offset="1" stop-color="#c8a061"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_42" data-name="Névtelen színátmenet 42" x1="5.84" y1="31.74" x2="8.8" y2="31.74" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#83703b"/>
+      <stop offset=".48" stop-color="#ceb176"/>
+      <stop offset="1" stop-color="#b2872a"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_43" data-name="Névtelen színátmenet 43" x1="8.57" y1="32.15" x2="14.8" y2="32.15" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ad721e"/>
+      <stop offset=".28" stop-color="#e3c6a2"/>
+      <stop offset=".62" stop-color="#f5e7d7"/>
+      <stop offset=".78" stop-color="#bea781"/>
+      <stop offset=".97" stop-color="#020001"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_44" data-name="Névtelen színátmenet 44" x1="18.63" y1="32.2" x2="26.42" y2="32.2" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4e2c08"/>
+      <stop offset="1" stop-color="#f3bd51"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_45" data-name="Névtelen színátmenet 45" x1="17.17" y1="35.36" x2="30.74" y2="35.36" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4e2c08"/>
+      <stop offset=".5" stop-color="#895a1a"/>
+      <stop offset="1" stop-color="#cfab60"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_46" data-name="Névtelen színátmenet 46" x1="22.21" y1="32.51" x2="25.38" y2="32.51" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6e4703"/>
+      <stop offset=".56" stop-color="#96732e"/>
+      <stop offset="1" stop-color="#ffe6a1"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_47" data-name="Névtelen színátmenet 47" x1="17.46" y1="35.92" x2="30.76" y2="35.92" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d28e28"/>
+      <stop offset=".19" stop-color="#d68d21"/>
+      <stop offset=".57" stop-color="#dbbe75"/>
+      <stop offset=".8" stop-color="#593011"/>
+      <stop offset="1" stop-color="#6f461e"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_48" data-name="Névtelen színátmenet 48" x1="24.51" y1="33.95" x2="24.15" y2="35.37" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b27929"/>
+      <stop offset="1" stop-color="#b2792a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_49" data-name="Névtelen színátmenet 49" x1="18.32" y1="34.69" x2="29.48" y2="34.69" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c69d53"/>
+      <stop offset=".32" stop-color="#efcc81"/>
+      <stop offset=".51" stop-color="#cb954c"/>
+      <stop offset="1" stop-color="#cb954c"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_50" data-name="Névtelen színátmenet 50" x1="26.45" y1="34.87" x2="27.46" y2="33.81" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8b5613"/>
+      <stop offset=".5" stop-color="#fbeeb8"/>
+      <stop offset="1" stop-color="#8b5613"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_51" data-name="Névtelen színátmenet 51" x1="24.1" y1="34.23" x2="29.46" y2="34.23" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bb934e"/>
+      <stop offset="1" stop-color="#e4c274"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_52" data-name="Névtelen színátmenet 52" x1="22.84" y1="34.95" x2="24.5" y2="34.95" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#aa7c36"/>
+      <stop offset=".5" stop-color="#feda96"/>
+      <stop offset="1" stop-color="#a87a34"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_53" data-name="Névtelen színátmenet 53" x1="18.91" y1="32.62" x2="22.57" y2="32.62" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b58f58"/>
+      <stop offset=".5" stop-color="#e9c893"/>
+      <stop offset="1" stop-color="#daae67"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_54" data-name="Névtelen színátmenet 54" x1="21.34" y1="32.93" x2="25.38" y2="32.93" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fcd592"/>
+      <stop offset=".56" stop-color="#ffecc8"/>
+      <stop offset="1" stop-color="#f5dfa4"/>
+    </linearGradient>
+    <radialGradient id="Névtelen_színátmenet_55" data-name="Névtelen színátmenet 55" cx="-146.26" cy="242.08" fx="-146.26" fy="242.08" r=".48" gradientTransform="translate(998.02 1637.63) scale(6.71 -6.71)" gradientUnits="userSpaceOnUse">
+      <stop offset=".65" stop-color="#000"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="Névtelen_színátmenet_56" data-name="Névtelen színátmenet 56" x1="15.38" y1="32.22" x2="16.6" y2="32.22" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4b3010"/>
+      <stop offset="1" stop-color="#794f19"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_57" data-name="Névtelen színátmenet 57" x1="14.06" y1="33.8" x2="17.94" y2="33.8" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f5f0a5"/>
+      <stop offset="1" stop-color="#d69e46"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_73-13" data-name="Névtelen színátmenet 73" x1="14.56" y1="31.91" x2="17.21" y2="31.91" xlink:href="#Névtelen_színátmenet_73"/>
+    <linearGradient id="Névtelen_színátmenet_59" data-name="Névtelen színátmenet 59" x1="14.08" y1="37.02" x2="17.78" y2="37.02" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4b2d07"/>
+      <stop offset=".5" stop-color="#d4a64e"/>
+      <stop offset="1" stop-color="#5a3004"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_61" data-name="Névtelen színátmenet 61" x1="15.93" y1="35.98" x2="15.93" y2="38.67" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".5" stop-color="#fce991"/>
+      <stop offset="1" stop-color="#fee991"/>
+    </linearGradient>
+    <mask id="mask" x="13.87" y="7.93" width="4.11" height="2.68" maskUnits="userSpaceOnUse">
+      <g id="mask0_400_15543" data-name="mask0 400 15543">
+        <path d="M17.05,7.93h-2.14c-.25,0-1.04.59-1.04.91v.95c0,.16.02.25.05.27.03.03.56.55.61.55.04,0,.04-.05.05-.11,0,0-.13-.12-.25-.25-.13-.13-.25-.26-.25-.29v-.63s.2.2.53.18.46-.4.46-.4l.11-.32s.02.22.05.49c.03.28.38.48.72.48.34,0,.7-.09.78-.52,0,0,.07.2.44.26.37.05.62-.18.62-.18v.64c0,.15-.21.29-.36.4-.05.03-.09.06-.11.09-.02.06.03.14.06.11.03-.02.61-.39.61-.57v-1.22c0-.29-.8-.84-.93-.84Z" fill="#fff"/>
+      </g>
+    </mask>
+    <linearGradient id="Névtelen_színátmenet_61-2" data-name="Névtelen színátmenet 61" x1="16.11" y1="36.58" x2="16.11" y2="38.62" xlink:href="#Névtelen_színátmenet_61"/>
+    <mask id="mask-1" x="14.33" y="7.97" width="3.56" height="2.05" maskUnits="userSpaceOnUse">
+      <g id="mask1_400_15543" data-name="mask1 400 15543">
+        <path d="M17.89,7.97h-3.56v2.05h3.56v-2.05Z" fill="#fff"/>
+      </g>
+    </mask>
+    <linearGradient id="Névtelen_színátmenet_62" data-name="Névtelen színátmenet 62" x1="16.02" y1="37.03" x2="16.02" y2="38.57" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset=".09" stop-color="#fef79d"/>
+      <stop offset=".41" stop-color="#f9c656"/>
+      <stop offset=".46" stop-color="#edb84d"/>
+      <stop offset=".6" stop-color="#d39a3a"/>
+      <stop offset=".74" stop-color="#c1842d"/>
+      <stop offset=".88" stop-color="#b67725"/>
+      <stop offset="1" stop-color="#b27322"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_74" data-name="Névtelen színátmenet 74" x1="14.11" y1="37.81" x2="14.45" y2="37.81" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f3c659"/>
+      <stop offset="1" stop-color="#a36d0e"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_74-2" data-name="Névtelen színátmenet 74" x1="14.44" y1="37.81" x2="14.92" y2="37.81" xlink:href="#Névtelen_színátmenet_74"/>
+    <linearGradient id="Névtelen_színátmenet_74-3" data-name="Névtelen színátmenet 74" x1="16.91" y1="37.86" x2="17.54" y2="37.86" xlink:href="#Névtelen_színátmenet_74"/>
+    <linearGradient id="Névtelen_színátmenet_74-4" data-name="Névtelen színátmenet 74" x1="17.46" y1="37.68" x2="17.71" y2="37.68" xlink:href="#Névtelen_színátmenet_74"/>
+    <linearGradient id="Névtelen_színátmenet_73-14" data-name="Névtelen színátmenet 73" x1="10.64" y1="39.87" x2="11.64" y2="39.87" xlink:href="#Névtelen_színátmenet_73"/>
+    <linearGradient id="Névtelen_színátmenet_73-15" data-name="Névtelen színátmenet 73" x1="11.62" y1="38.82" x2="12.29" y2="38.82" xlink:href="#Névtelen_színátmenet_73"/>
+    <linearGradient id="Névtelen_színátmenet_73-16" data-name="Névtelen színátmenet 73" x1="11.93" y1="37.55" x2="13.14" y2="37.55" xlink:href="#Névtelen_színátmenet_73"/>
+    <linearGradient id="Névtelen_színátmenet_74-5" data-name="Névtelen színátmenet 74" x1="12.76" y1="36.78" x2="13.58" y2="35.78" xlink:href="#Névtelen_színátmenet_74"/>
+    <linearGradient id="Névtelen_színátmenet_73-17" data-name="Névtelen színátmenet 73" x1="21.22" y1="39.87" x2="20.22" y2="39.87" xlink:href="#Névtelen_színátmenet_73"/>
+    <linearGradient id="Névtelen_színátmenet_73-18" data-name="Névtelen színátmenet 73" x1="20.24" y1="38.82" x2="19.57" y2="38.82" xlink:href="#Névtelen_színátmenet_73"/>
+    <linearGradient id="Névtelen_színátmenet_73-19" data-name="Névtelen színátmenet 73" x1="19.93" y1="37.55" x2="18.72" y2="37.55" xlink:href="#Névtelen_színátmenet_73"/>
+    <linearGradient id="Névtelen_színátmenet_74-6" data-name="Névtelen színátmenet 74" x1="19.1" y1="36.78" x2="18.28" y2="35.78" xlink:href="#Névtelen_színátmenet_74"/>
+    <linearGradient id="Névtelen_színátmenet_84" data-name="Névtelen színátmenet 84" x1="14.64" y1="39.27" x2="15.26" y2="39.27" gradientTransform="translate(0 46.59) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f5f0a5"/>
+      <stop offset="1" stop-color="#fed15d"/>
+    </linearGradient>
+    <linearGradient id="Névtelen_színátmenet_84-2" data-name="Névtelen színátmenet 84" x1="14.47" y1="39.94" x2="14.78" y2="39.94" xlink:href="#Névtelen_színátmenet_84"/>
+    <linearGradient id="Névtelen_színátmenet_84-3" data-name="Névtelen színátmenet 84" x1="14" y1="40.36" x2="14.51" y2="40.36" xlink:href="#Névtelen_színátmenet_84"/>
+    <linearGradient id="Névtelen_színátmenet_84-4" data-name="Névtelen színátmenet 84" x1="13.72" y1="40.62" x2="14.05" y2="40.62" xlink:href="#Névtelen_színátmenet_84"/>
+    <linearGradient id="Névtelen_színátmenet_84-5" data-name="Névtelen színátmenet 84" x1="12.99" y1="40.83" x2="13.74" y2="40.83" xlink:href="#Névtelen_színátmenet_84"/>
+    <linearGradient id="Névtelen_színátmenet_84-6" data-name="Névtelen színátmenet 84" x1="17.22" y1="39.27" x2="16.6" y2="39.27" xlink:href="#Névtelen_színátmenet_84"/>
+    <linearGradient id="Névtelen_színátmenet_84-7" data-name="Névtelen színátmenet 84" x1="17.39" y1="39.94" x2="17.08" y2="39.94" xlink:href="#Névtelen_színátmenet_84"/>
+    <linearGradient id="Névtelen_színátmenet_84-8" data-name="Névtelen színátmenet 84" x1="17.86" y1="40.36" x2="17.35" y2="40.36" xlink:href="#Névtelen_színátmenet_84"/>
+    <linearGradient id="Névtelen_színátmenet_84-9" data-name="Névtelen színátmenet 84" x1="18.14" y1="40.62" x2="17.81" y2="40.62" xlink:href="#Névtelen_színátmenet_84"/>
+    <linearGradient id="Névtelen_színátmenet_84-10" data-name="Névtelen színátmenet 84" x1="18.87" y1="40.83" x2="18.12" y2="40.83" xlink:href="#Névtelen_színátmenet_84"/>
+  </defs>
+  <path d="M36.73,18.21v-8.63h5.13v.72h-4.34v3.23h3.98v.72h-3.98v3.97h-.79ZM46.7,18.38c-.62,0-1.16-.11-1.63-.32-.46-.22-.82-.56-1.09-1-.26-.44-.39-1-.39-1.68v-5.81h.79v5.81c0,.77.2,1.35.6,1.73.41.37.98.56,1.71.56s1.3-.19,1.7-.56c.41-.38.62-.95.62-1.73v-5.81h.79v5.81c0,.67-.13,1.23-.39,1.68-.25.44-.62.78-1.09,1-.47.21-1.01.32-1.63.32ZM52.1,18.21v-8.63h1.57l3.53,8.17h.15v-8.17h.79v8.63h-1.57l-3.53-8.18h-.15v8.18h-.79ZM60.04,18.21v-.72h1.23v-7.2h-1.23v-.72h3.28c1.13,0,2,.29,2.63.86.63.57.95,1.46.95,2.66v1.59c0,1.21-.32,2.1-.95,2.66-.62.57-1.5.85-2.63.85h-3.28ZM62.06,17.49h1.26c.9,0,1.6-.22,2.07-.65.48-.44.72-1.14.72-2.11v-1.67c0-.98-.24-1.68-.72-2.11-.48-.44-1.17-.65-2.07-.65h-1.26v7.19ZM68.92,18.21v-8.63h5.22v.72h-4.43v3.23h4.08v.72h-4.08v3.26h4.48v.72h-5.27ZM75.7,18.21v-.72h1.23v-7.2h-1.23v-.72h3.28c1.13,0,2,.29,2.63.86.63.57.95,1.46.95,2.66v1.59c0,1.21-.32,2.1-.95,2.66-.62.57-1.5.85-2.63.85h-3.28ZM77.72,17.49h1.26c.9,0,1.6-.22,2.07-.65.48-.44.72-1.14.72-2.11v-1.67c0-.98-.24-1.68-.72-2.11-.48-.44-1.17-.65-2.07-.65h-1.26v7.19ZM84.33,18.21v-8.63h1.63v3.56h3.21v-3.56h1.63v8.63h-1.63v-3.59h-3.21v3.59h-1.63ZM92.67,18.21v-8.63h1.63v8.63h-1.63ZM97.78,18.21l-2.2-8.63h1.68l1.83,7.59h.17l1.83-7.59h1.68l-2.2,8.63h-2.79ZM104.04,18.21v-8.63h5.55v1.48h-3.92v2.06h3.58v1.48h-3.58v2.13h4v1.48h-5.62Z" fill="#fff"/>
+  <path d="M26.11,7.84v11.25l-10.18,5.63-10.18-5.63V7.84L15.93,2.21l10.18,5.63Z" fill="#020001"/>
+  <path d="M15.93.29L4.07,6.85v13.24l11.86,6.56,11.86-6.56V6.85L15.93.29ZM5.59,7.74L15.93,2.02l10.34,5.72v11.44l-10.34,5.72-10.34-5.72V7.74Z" fill="url(#Névtelen_színátmenet_9)"/>
+  <path d="M15.93.29L4.07,6.85v13.24l11.86,6.56,11.86-6.56V6.85L15.93.29ZM5.59,7.74L15.93,2.02l10.34,5.72v11.44l-10.34,5.72-10.34-5.72V7.74Z" fill="url(#Névtelen_színátmenet_2)"/>
+  <path d="M15.93,24.91l-10.34-5.72v-6.43h-1.52v7.33l11.86,6.56v-1.55l.02-.19h-.02Z" fill="url(#Névtelen_színátmenet_3)"/>
+  <path d="M15.77,25l.16.09.15-.09,10.18-5.63.17-.09V7.65l-.32.19v11.25l-10.18,5.63-10.18-5.63V7.84l-.32-.19v11.63l.17.09,10.18,5.63Z" fill="url(#Névtelen_színátmenet_4)"/>
+  <path d="M15.93,2.21l10.18,5.63.32-.19-.17-.09L16.08,1.93l-.15-.09-.16.09L5.59,7.56l-.17.09.32.19L15.93,2.21Z" fill="url(#Névtelen_színátmenet_5)"/>
+  <path d="M26.89,20.4l-10.27,5.68-.69.38-.69-.38-10.27-5.68-.74-.41-.32.19.05.03.86.47,10.27,5.68.8.44.04.02.04-.02.8-.44,10.27-5.68.86-.47.05-.03-.32-.19-.74.41Z" fill="url(#Névtelen_színátmenet_6)"/>
+  <path d="M27.91,6.73l-.86-.47L16.78.57l-.8-.44-.04-.02-.04.02-.8.44L4.81,6.25l-.86.47-.05.03v13.43l.32-.19V6.94l.74-.41L15.24.85l.69-.38.69.38,10.27,5.68.74.41v13.05l.32.19V6.75l-.05-.03Z" fill="url(#Névtelen_színátmenet_7)"/>
+  <path d="M15.93,2.3l7.04,3.9h0l3.06,1.69v11.16l-10.1,5.59-10.1-5.59V7.88L15.93,2.3ZM15.93,4.65l-8.04,4.45v8.73l8.04,4.45,8.04-4.45v-8.73l-1.53-.85h0l-6.51-3.6Z" fill="url(#Névtelen_színátmenet_8)" fill-rule="evenodd"/>
+  <path d="M31.12,9.06c-.05-.06-.12-.12-.7-.59l-.09-.07s-.09-.07-.11-.09c-.27-.22-.55-.2-.77-.16-.04,0-.08.02-.12.03-.06.01-.38.08-.75.15l-.88.18c-.38.08-.79.16-1.18.25-.23.05-.45.1-.65.14-.09.02-.17.04-.25.06l-.16.03c-.1.02-.19.05-.28.06-.04,0-.08.02-.12.03-.23.06-.31.08-.35.1l-1.6.55c-.54.18-1.07.36-1.33.44l-.16.05s-.04.02-.05.02c-.08.03-1.04.36-2.61.9,0,0,.02,0,.02-.02.1-.07.21-.15.29-.23.25-.26.33-.97.28-1.19,0-.02,0-.03-.01-.04.07-.12.17-.29.29-.41.11-.12.21-.2.28-.26.11-.09.18-.16.23-.28l.11-.29-.08-.08c.15-.3.24-.67.28-.87.03-.03.07-.06.1-.1.05-.03.15-.07.19-.09.09-.03.14-.06.2-.1.07-.05.12-.11.15-.18,0,0,.02-.01.03-.02.1-.06.35-.24.32-.57-.02-.22-.23-.48-.45-.56-.19-.07-.4-.03-.54.11h-.01c-.05.03-.11.05-.17.08l-.29.21c-.14.12-.26.26-.33.39-.02.03-.03.06-.05.09-.36.17-.72,1.25-.72,1.25,0,.02,0,.04-.01.06-.27.13-.51.56-.67.89v-.17c0-.18-.06-.47-.59-.89-.15-.12-.29-.22-.41-.28.01-.02.02-.05.03-.07l.18-.45s0,0,0,0c.04-.05.07-.1.09-.16.04-.05.06-.11.08-.16.02-.02.04-.04.06-.07,0,0,0,0,0-.01,0,0,.02,0,.02-.01.03-.01.06-.03.09-.05.05-.02.09-.05.13-.09.03-.01.06-.03.09-.05.08-.03.15-.08.2-.13.02-.01.04-.02.06-.03h0s.06,0,.11-.02c.02,0,.03,0,.05,0,.13.02.4.07.58-.17.05-.07.16-.24.06-.49-.03-.11-.09-.27-.31-.4-.28-.17-.5-.11-.62-.09-.02,0-.03,0-.03,0-.05,0-.09.02-.16.05-.04,0-.08.02-.15.04-.11.05-.18.1-.24.16-.06.02-.12.06-.18.11-.04.02-.08.05-.11.08-.01,0-.03.01-.04.02-.08.05-.13.1-.16.14,0,0,0,0,0,0-.04.02-.08.04-.11.07h0c-.05.05-.15.12-.21.25-.06.04-.1.09-.14.15-.02.02-.03.03-.04.06-.02.03-.05.07-.07.13-.03.05-.05.11-.07.17,0,.01-.01.02-.02.03,0,.01-.01.02-.02.04h-.03s0,.06,0,.06c-.01.03-.02.06-.03.09-.05.06-.08.14-.09.22-.01.02-.02.04-.03.06l-.17.32s-.02.03-.02.04h-.62s-.01-.03-.02-.04l-.17-.32s-.02-.04-.03-.06c-.01-.08-.04-.15-.09-.22,0-.03-.01-.06-.03-.1v-.06s-.02,0-.02,0c0-.01-.01-.02-.02-.04,0-.01-.01-.02-.02-.04-.02-.06-.04-.11-.07-.16-.02-.06-.05-.11-.07-.14-.01-.02-.03-.04-.04-.06-.03-.06-.08-.11-.14-.15-.06-.13-.16-.21-.21-.25h0s-.07-.05-.11-.07c0,0,0,0-.01,0-.03-.04-.08-.09-.16-.14-.01,0-.03-.02-.04-.02-.03-.03-.07-.06-.11-.08-.05-.05-.11-.08-.17-.11-.06-.06-.13-.12-.24-.16-.06-.03-.11-.04-.15-.04-.07-.03-.11-.04-.16-.05,0,0-.02,0-.04,0-.11-.03-.33-.08-.61.09-.22.13-.28.29-.31.4-.1.24,0,.42.06.49.18.23.45.19.58.17.02,0,.04,0,.05,0,.05.01.09.02.11.02h0s.03.02.05.03c.05.05.11.1.2.13.03.02.06.04.09.05.04.04.08.07.13.09.03.02.06.03.09.05,0,0,.02,0,.02.01,0,0,0,0,.01.01.02.02.04.04.06.06.02.05.04.1.08.16.02.05.05.11.09.16,0,0,0,0,0,0l.18.44s.02.05.04.07c0,0,0,.02,0,.03-.47.25-1.01.75-1.01,1.21v.11c-.15-.34-.39-.76-.67-.89,0-.02,0-.04,0-.06,0,0-.36-1.08-.72-1.25-.01-.03-.03-.06-.05-.09-.07-.13-.19-.27-.33-.39l-.29-.21c-.06-.03-.11-.05-.17-.07h-.01c-.14-.15-.35-.2-.54-.13-.22.08-.43.34-.45.56-.03.33.23.5.32.57.01,0,.02.01.03.02.03.07.09.13.15.18.06.04.11.07.2.1.05.02.14.06.19.09.03.04.06.07.09.1.04.2.14.57.29.87l-.08.08.11.29c.05.12.12.19.23.28.07.06.16.14.28.26.12.12.21.29.28.41,0,.01,0,.03-.01.04-.05.22.03.93.28,1.19.08.09.19.16.29.23.02.02.04.03.06.04-.6-.2-1.39-.46-2.26-.75-.52-.17-.97-.32-1.42-.48-.16-.06-.31-.11-.44-.16l-.29-.11c-.48-.17-.91-.32-1.73-.55-.15-.04-.31-.08-.49-.13-.11-.03-.23-.06-.36-.09-.06-.02-.12-.03-.19-.04-.24-.05-.49-.11-.77-.17-.13-.03-.26-.06-.39-.08-.26-.05-.52-.11-.76-.15-.12-.02-.24-.05-.36-.07-.11-.02-.23-.04-.33-.06l-.56-.1c-.32-.06-.51-.09-.51-.09l-.22-.04-1.34,1.18,1.47,3.69,2.95.91.06.2v.03s.02.05.04.09c0,.02.02.05.04.08.04.09.09.19.15.28.03.04.05.09.09.13.03.05.06.1.11.15.12.15.25.33.4.49.13.14.25.26.36.34.13.1.26.16.39.2.34.1,1.69.28,1.96.32h.03s.03,0,.08,0c.08,0,.21,0,.33-.03.05-.01.08-.02.95-.37l1.12-.45c.16-.06.39-.19.44-.16.02.01-.15.34-.17.39-.07.22-.22.76-.22.78l-.04.15c-.03.12-.03.11-.04.16l-.07.33-.1.33c-.27.92-.24,1.15-.24,1.15.1.2.4.48.68.64l.07.07c.06.07.05.07.07.16.14.41-.01.62.15,1.02.01.03.14.28.18.31.02,0,.06.05.08.05.08,0,.15-.02.22-.05,0,0,.01,0,.02,0,.03,0,.06,0,.08,0,.19,0,.37-.09.46-.25.07-.12.08-.23.07-.31,0-.01.01-.03.02-.04.04-.11.06-.18.06-.28,0,0,0-.02,0-.04,0-.01,0-.02,0-.04,0-.04.01-.1,0-.17.04-.11.04-.22.04-.27v-.03s0-.06,0-.1v-.04l.03-.41s-.02-.38-.09-.71l.07-.23.15.12s.05.03.11.06l.04.23c.09.47.25,1,.72,1.42l.09.19c.02.05.64,1.33,2.06,1.33s2.03-1.28,2.06-1.33l.1-.21h0c.49-.44.66-1.18.68-1.27l.06-.3.18-.1h0c-.07-.07-.18-.12-.15-.25l.19-.2c0,.07,0,.15-.02.22l-.02.23s.05.06.05.11c0,.34,0,.62,0,.64l-.04.31-.02.21s0,.07,0,.1v.03c0,.05,0,.16.04.27,0,.07,0,.13,0,.17,0,.01,0,.03,0,.04,0,.02,0,.03,0,.04,0,.1.02.17.06.28,0,.02.01.03.02.04,0,.09,0,.19.07.32.09.16.27.26.46.25.03,0,.06,0,.08,0,0,0,.02,0,.02,0,.07.03.15.05.22.05.05,0,.1,0,.15-.02v.02s.22-.26.25-.3c.15-.3-.02-.83-.02-1.21,0-.22.16-.26.38-.31.33-.07.45-.1.57-.22.1-.12-.16-.82-.27-1.21l-.05-.13-.16-.56s-.04-.14-.07-.26v-.15s.05-.48.06-.7c0-.05,0-.08,0-.11,0-.04,0-.12-.06-.22l1.5.62h.02c.58.22.7.23.74.24.06,0,.16.02,2.43-.27l.21-.03,1.39-2.06,1.48-.47c.2-.06.39-.12.54-.17l.16-.05c.2-.07.23-.08.24-.08.11-.04.2-.1.27-.18.08-.08.12-.16.15-.22,0-.01.01-.02.02-.03.01-.02.03-.05.11-.23l.06-.15c.05-.11.1-.24.16-.38l.18-.44c.27-.64.54-1.3.54-1.3l.15-.35s.03-.08.04-.11c.02-.06.03-.12.03-.18.02-.21-.09-.35-.13-.39ZM17.67,5.91s.02.06.03.09c0,.01,0,.02,0,.03,0,0-.02,0-.02.01,0-.02-.02-.04-.02-.06,0-.02,0-.05,0-.07ZM14.19,5.91s0,0,0,0h0ZM14.19,5.97s-.01.04-.02.07c0,0-.02,0-.02-.01,0,0,0-.02,0-.03.01-.03.02-.06.03-.08h0s0,.04,0,.06ZM14.51,6.41s0,0,0,0c0,0,0,0,0,0ZM14.52,6h0s0,0,.01,0c0,0,0,0-.01,0ZM17.34,6h0s0,0,0,0c0,0,0,0,0,0Z"/>
+  <path d="M13.35,16.18s.8,1,2.3,1.06c1.5.06,2.49-.43,2.92-1.08,0,0,.15.57.06,1.41,0,0-1.39.81-2.62.81s-2.79-.93-2.79-.93c0,0-.03-.93.14-1.26Z" fill="url(#Névtelen_színátmenet_11)"/>
+  <path d="M13.58,18.05s.85.55,1.42.82c.57.27,1.11.35,1.96,0,.85-.35,1.4-.71,1.4-.71,0,0-.15.72-.57,1.05-.42.33-1.59.74-2.68.47-1.09-.27-1.39-.88-1.53-1.62Z" fill="url(#Névtelen_színátmenet_11-2)"/>
+  <path d="M17.86,14.93l-.62.77s-2.31.18-2.81-.19c-.5-.37-.46-.64-.46-.64l-.19-.07s-.32.54-.46,1.15c0,0,1.26.56,2.61.56,1.11,0,2.18-.42,2.52-.57-.15-.7-.5-1.12-.5-1.12l-.09.1Z" fill="url(#Névtelen_színátmenet_11-3)"/>
+  <path d="M18.1,14.84c-.11-.14-.18-.22-.18-.22,0,0-.63.75-1.99.75s-1.99-.8-1.99-.8l-.15.24.19.07s-.04.27.46.64c.5.37,2.81.19,2.81.19l.62-.77.09-.1s.35.41.5,1.12c.07-.03.11-.05.11-.05,0,0-.35-.92-.46-1.06Z" fill="#edc459"/>
+  <path d="M13.96,14.87s.75.69,2.03.64c1.27-.05,1.87-.58,1.87-.58l.35.95s-.89.54-2.29.54-2.27-.51-2.27-.51l.32-1.04Z" fill="url(#Névtelen_színátmenet_14)"/>
+  <path d="M13.64,16.55s.67.8,2.29.8,2.35-.66,2.35-.66l-.03.89s-1.11.72-2.29.72-2.27-.77-2.27-.77l-.05-.98Z" fill="url(#Névtelen_színátmenet_14-2)"/>
+  <path d="M13.7,18.21s1.26.98,2.26.98,2.24-.85,2.24-.85c0,0-.23.69-.63.91-.41.22-.93.43-1.76.43s-1.58-.47-1.82-.8c-.24-.34-.3-.66-.3-.66Z" fill="url(#Névtelen_színátmenet_14-3)"/>
+  <path d="M14.35,19.54s.08-.02.19.11c.11.13.42.83,1.46.83s1.42-.87,1.5-.94c.08-.07.12,0,.12,0,0,0-.49,1.06-1.64,1.06s-1.64-1.06-1.64-1.06Z" fill="#fff"/>
+  <path d="M20.48,17.73h-.05s.08.21.11.39-.05.26-.08.34c-.03.08.05.08.11.02.05-.06.03-.15.03-.15,0,0,.18,0,.26.08.08.07.14-.13.1-.18-.03-.05-.09,0-.09-.1,0-.1-.08-.28-.12-.35-.04-.07-.17-.09-.28-.05Z" fill="url(#Névtelen_színátmenet_73)"/>
+  <path d="M20.45,17.43s.06.04.14.06c.08.02.17-.01.11-.11-.06-.09-.11-.41-.15-.52-.04-.1-.2-.1-.25-.01-.05.08,0,.41.01.47.02.06.07.12.07.12l.07-.02Z" fill="url(#Névtelen_színátmenet_73-2)"/>
+  <path d="M19.93,15.21s-.15-.01-.11.37c.04.38.21.92.24,1.02.03.1.57.14.49-.05-.07-.19-.37-1.02-.46-1.19-.09-.16-.17-.15-.17-.15Z" fill="url(#Névtelen_színátmenet_73-3)"/>
+  <path d="M18.99,14.33s.02-.09.18-.06c.3.05.71.6.88.81,0,0-.39.04-.44.09-.05.05-.05.07-.05.07,0,0-.47-.54-.55-.67-.08-.14-.02-.24-.02-.24Z" fill="url(#Névtelen_színátmenet_73-4)"/>
+  <path d="M19.02,14.31v.1s.04.06.31.38c.28.32.36.27.39.26.02,0-.12-.14-.36-.36-.12-.1-.34-.38-.34-.38Z" fill="#211105"/>
+  <path d="M19.88,15.41s.11.14.18.37c.07.22.2.66.25.74.04.07-.14.11-.19.05-.05-.06-.24-.87-.28-.98-.04-.11.04-.18.04-.18Z" fill="#211105"/>
+  <path d="M20.44,17.54s.05-.02.07-.06c.09-.14-.11-.54-.13-.59,0,0-.12.03-.1.1.02.08.06.4.06.46,0,.07.09.08.09.08Z" fill="#211105"/>
+  <path d="M20.46,17.75s.09.2.1.3c.02.1.03.19.03.19,0,0,.09-.03.08-.15-.01-.14-.06-.26-.09-.32-.03-.07-.13-.03-.13-.03Z" fill="#211105"/>
+  <path d="M19.8,16.94s-.3.11-.53.16c0,0,.12.7.18.99.06.3.18.61.18.61,0,0,.29-.1.28-.23,0-.14-.09-.73-.04-1.09.05-.37-.07-.44-.07-.44Z" fill="url(#Névtelen_színátmenet_32)"/>
+  <path d="M19.21,15.64l-.14-.05.1.34.15.91.4-.08-.51-1.12Z" fill="#211105"/>
+  <path d="M18.6,14.25s.02-.11.05-.1c.04,0,.75,1.22.75,1.22,0,0-.02-.04-.14.06-.1.09-.29.13-.35.15l-.34-1.29s.02-.02.03-.02Z" fill="url(#Névtelen_színátmenet_73-5)"/>
+  <path d="M18.57,14.27l.34,1.29s-.02,0-.02,0c-.02,0-.48-1.16-.47-1.18,0-.02.1-.08.15-.11Z" fill="#563210"/>
+  <path d="M18.19,14.16h-.06s-.1-.15-.14-.2c-.04-.05-.06-.08-.06-.08l.09-.04s.1.12.19.1.03-.04.17-.04c.14,0,.19.04.19.04,0,0-.03.13-.07.19-.04.06-.13.03-.13.03h-.2Z" fill="#d69e46"/>
+  <path d="M18.48,14.08s-.07.05-.09.06c-.02,0,0,.03,0,.03h-.2s.02-.06-.02-.1c-.04-.04-.08-.08-.08-.08l.31.02.08.07Z" fill="#211105"/>
+  <path d="M18.68,14.3s.43.99.43,1c0,.01-.09.03-.14.01-.05-.01-.38-.95-.38-.95,0,0-.06.03-.07.11-.02.07.42.97.42.97,0,0,.04-.08.05-.08s.25-.07.27-.09c.02-.02-.54-1.01-.54-1.01l-.04.04Z" fill="#211105"/>
+  <path d="M19.01,15.64s.11.25.18.64c.08.39.03.68.03.68l.56-.14s-.31-.89-.39-1.02c-.08-.13-.25-.17-.25-.17,0,0,.17.36.3.67.13.31.16.46.16.46l-.28.06s.02-.24-.07-.64c-.09-.4-.16-.47-.18-.5-.02-.04-.08-.02-.08-.02Z" fill="url(#Névtelen_színátmenet_73-6)"/>
+  <path d="M19.67,17.06s-.18.1-.18.25c0,.15.17,1.34.17,1.34,0,0,.15.01.12-.28-.03-.3-.11-1.3-.11-1.3Z" fill="#211105"/>
+  <path d="M19.58,18.81s-.03.26-.03.36,0,.12.03.14c.03.02.11-.07.14-.12.03-.05-.02-.09,0-.19.02-.1-.02-.13-.05-.19-.03-.06-.09-.05-.09,0Z" fill="url(#Névtelen_színátmenet_32-2)"/>
+  <path d="M19.73,19.31s-.04.04-.1.08c-.06.04-.03.15-.03.25s0,.09.03.19c.04.1.05.06.05.15s-.02.09,0,.14c.03.05.16-.03.18-.07l.02-.04s.11.15.17.17c.06.03.14-.06.1-.08-.04-.02-.09-.02-.21-.2-.12-.19-.13-.47-.15-.54-.02-.07-.05-.1-.07-.04Z" fill="url(#Névtelen_színátmenet_32-3)"/>
+  <path d="M11.42,17.77h.05s-.08.21-.11.39c-.04.18.05.26.08.34.03.08-.05.08-.11.02-.05-.06-.03-.15-.03-.15,0,0-.18,0-.26.08-.08.07-.14-.13-.1-.18.03-.05.09,0,.09-.1,0-.1.08-.28.12-.35.04-.07.17-.09.28-.05Z" fill="url(#Névtelen_színátmenet_73-7)"/>
+  <path d="M11.45,17.47s-.06.04-.14.06c-.08.02-.17-.01-.11-.11.06-.09.11-.41.15-.52.04-.1.2-.1.25-.01.05.08,0,.41-.01.47s-.07.12-.07.12l-.07-.02Z" fill="url(#Névtelen_színátmenet_73-8)"/>
+  <path d="M11.98,15.25s.15-.01.11.37c-.04.38-.21.92-.24,1.02-.03.1-.57.14-.49-.05.07-.19.37-1.02.46-1.19.09-.16.17-.15.17-.15Z" fill="url(#Névtelen_színátmenet_73-9)"/>
+  <path d="M12.91,14.37s-.02-.09-.18-.06c-.3.05-.71.6-.88.81,0,0,.39.04.44.09.05.05.05.07.05.07,0,0,.47-.54.55-.67.08-.14.02-.24.02-.24Z" fill="url(#Névtelen_színátmenet_73-10)"/>
+  <path d="M12.1,16.98s.3.11.53.16c0,0-.12.7-.18.99-.06.3-.18.61-.18.61,0,0-.29-.1-.28-.23,0-.14.09-.73.04-1.09-.05-.37.07-.44.07-.44Z" fill="url(#Névtelen_színátmenet_32-4)"/>
+  <path d="M12.69,15.68l.14-.05-.1.34-.15.91-.4-.08.51-1.12Z" fill="#211105"/>
+  <path d="M13.31,14.29s-.02-.11-.05-.1c-.04,0-.75,1.22-.75,1.22,0,0,.02-.04.14.06.1.09.29.13.35.15l.34-1.29s-.02-.02-.03-.02Z" fill="url(#Névtelen_színátmenet_73-11)"/>
+  <path d="M13.33,14.31l-.34,1.29s.02,0,.02,0c.02,0,.48-1.16.47-1.18,0-.02-.1-.08-.15-.11Z" fill="#563210"/>
+  <path d="M13.71,14.2h.06s.1-.15.14-.2c.04-.05.06-.08.06-.08l-.09-.04s-.1.12-.19.1c-.09-.02-.03-.04-.17-.04-.14,0-.19.04-.19.04,0,0,.03.13.07.19.04.06.13.03.13.03h.2Z" fill="#d69e46"/>
+  <path d="M13.43,14.12s.07.05.09.06c.02,0,0,.03,0,.03h.2s-.02-.06.02-.1c.04-.04.08-.08.08-.08l-.31.02-.08.07Z" fill="#211105"/>
+  <path d="M13.22,14.34s-.43.99-.43,1c0,.01.09.03.14.01.05-.01.38-.95.38-.95,0,0,.06.03.07.11.02.07-.42.97-.42.97,0,0-.04-.08-.05-.08s-.25-.07-.27-.09c-.02-.02.54-1.01.54-1.01l.04.04Z" fill="#211105"/>
+  <path d="M12.89,15.68s-.11.25-.18.64c-.08.39-.03.68-.03.68l-.56-.14s.31-.89.39-1.02c.08-.13.25-.17.25-.17,0,0-.17.36-.3.67-.13.31-.16.46-.16.46l.28.06s-.02-.24.07-.64c.09-.4.16-.47.18-.5.02-.04.08-.02.08-.02Z" fill="url(#Névtelen_színátmenet_73-12)"/>
+  <path d="M12.23,17.1s.18.1.18.25c0,.15-.17,1.34-.17,1.34,0,0-.15.01-.12-.28.03-.3.11-1.3.11-1.3Z" fill="#211105"/>
+  <path d="M12.89,14.35v.1s-.04.06-.31.38c-.28.32-.36.27-.39.26-.02,0,.12-.14.36-.36.12-.1.34-.38.34-.38Z" fill="#211105"/>
+  <path d="M12.02,15.45s-.11.14-.18.37c-.07.22-.2.66-.25.74-.04.07.14.11.19.05.05-.06.24-.87.28-.98.04-.11-.04-.18-.04-.18Z" fill="#211105"/>
+  <path d="M11.49,17.53s-.05-.02-.07-.06c-.09-.14.08-.49.09-.54,0,0,.12.03.1.1-.02.08-.03.35-.03.42,0,.07-.09.08-.09.08Z" fill="#211105"/>
+  <path d="M11.44,17.79s-.09.2-.1.3c-.02.1-.03.19-.03.19,0,0-.09-.03-.08-.15.01-.14.06-.26.09-.32.03-.07.13-.03.13-.03Z" fill="#211105"/>
+  <path d="M12.32,18.85s.03.26.03.36,0,.12-.03.14c-.03.02-.11-.07-.14-.12-.03-.05.02-.09,0-.19-.02-.1.02-.13.05-.19.03-.06.09-.05.09,0Z" fill="url(#Névtelen_színátmenet_32-5)"/>
+  <path d="M12.17,19.35s.04.04.1.08.03.15.03.25c0,.1,0,.09-.03.19-.04.1-.05.06-.05.15s.02.09,0,.14c-.03.05-.16-.03-.18-.07l-.02-.04s-.11.15-.17.17c-.06.03-.14-.06-.1-.08.04-.02.09-.02.21-.2.12-.19.13-.47.15-.54.02-.07.05-.1.07-.04Z" fill="url(#Névtelen_színátmenet_32-6)"/>
+  <path d="M8.87,15.64l-.29.07s-1.57-.2-1.88-.3c-.32-.1-.66-.54-.91-.88-.26-.34-.34-.61-.34-.61,0,0,2.18-.85,2.94-.84.76,0,2.7.45,3.46.47.76.02,1.28-.17,1.44-.25.15-.09.55-.2.55-.2l.69-.21.19.35-5.83,2.39Z" fill="url(#Névtelen_színátmenet_33)"/>
+  <path d="M8.85,15.44l-.02-.02s.32-.3.48-.39c.03-.02.06-.03.09-.05.11-.06.18-.09.19-.21.01-.09-.02-.22-.05-.32-.02-.06-.03-.11-.03-.15h.03s.01.08.03.14c.03.1.06.23.05.33-.02.13-.09.17-.21.23-.03.01-.06.03-.09.05-.16.09-.47.39-.47.39Z" fill="url(#Névtelen_színátmenet_34)"/>
+  <path d="M6.63,13.74s.33.18.84.24c.52.06,1.17.16,1.51.2.34.04.73.07.73.07l-.3.06s-.82-.09-1.21-.15c-.39-.06-.77-.1-1.11-.17-.34-.07-.52-.19-.56-.23,0,0,.03-.04.05-.05.02-.01.05.02.05.02Z" fill="url(#Névtelen_színátmenet_35)"/>
+  <path d="M2.08,8.67l-.91.77,1.21,3.09,2.97.93.52-.04.21-.1,2.36-.61,2.34.38,1.72.22,1.31-.22.69-.21v-.52s-8.01-2.57-8.01-2.57l-4.42-1.14Z" fill="url(#Névtelen_színátmenet_36)"/>
+  <path d="M5.32,13.5s.34-.02.46-.04c.12-.02,2.12-.55,2.57-.57.45-.02,1.91.22,2.71.34.79.12,1.65.2,2.07.1.42-.11.69-.23.69-.23l.03-.14s-.87.19-1.57.19-1.37-.1-2-.25c-.63-.15-1.3-.27-1.3-.27l.65-.66-.29-.02-.62.17-1.04-.7-.46.07.1.1.42.93-.96.26-.89.64-.49.03-.06.06Z" fill="url(#Névtelen_színátmenet_37)"/>
+  <path d="M2.44,8.86l-.4.05v.14l-.43.44.83,2.01,5.06-.16.28.05s1.17.3,2.97.67c1.8.37,2.54.34,2.54.34l.1.14s-1.4-.11-2.58-.3c-1.19-.19-3.24-.71-3.24-.71l-5.54.16-.88-2.31.93-.7.36.19Z" fill="url(#Névtelen_színátmenet_38)"/>
+  <path d="M2.03,9.05s3.55.69,4.37.92c.82.23,2.96.97,4.51,1.44,1.55.47,3.84,1.32,3.84,1.32l-.41-.59s-1.66-.57-3.83-1.28c-2.17-.71-2.3-.85-3.86-1.29-1.55-.44-4.66-.99-4.66-.99l-.93.81,1.27,3.18,3,.92.05-.06-2.98-.96-1.17-2.98.84-.74.37.11-.4.05v.14h0Z" fill="url(#Névtelen_színátmenet_39)"/>
+  <path d="M5.79,9.81l2.5.71-.62.8,1.04.73.63-.11-.62.17-.12.21-.06-.19-1.03-.77.53-.77-2.25-.78Z" fill="#4f2d08"/>
+  <path d="M2.51,12.26l3.02.81s1.23-.45,2.13-.6l-.5-.8h-.47l.61-.1.57.98s-1.45.3-2.33.63l-3.04-.8v-.11h0Z" fill="url(#Névtelen_színátmenet_40)"/>
+  <path d="M9.41,14.32s.85-.29,1.15-.47c0,0-.29-.08-.76-.08,0,0-.54-.22-1.37-.26-.83-.04-1.8.23-1.8.23l-.05-.02s.82-.35,1.81-.34c.99.02,1.51.25,1.51.25,0,0,.57.04.98.13.41.1.58.09.7.08.11,0,.7-.12,1.11-.29.42-.17.57-.27.57-.27,0,0,.02.23-.66.47-.68.24-1.51.23-1.51.23l-1.56.36-.13-.03Z" fill="url(#Névtelen_színátmenet_41)"/>
+  <path d="M8.8,15.44s-.6-.12-.89-.17-.72-.1-.97-.15c-.25-.06-.44-.26-.67-.46-.23-.2-.39-.38-.39-.38l-.04.04s.29.34.55.56c.26.22.41.31.68.35.27.04.47.05.8.09.34.04.93.13.93.13Z" fill="url(#Névtelen_színátmenet_42)"/>
+  <path d="M14.8,13.29s-5.81,2.36-5.95,2.4c-.13.03-.28.02-.28.02l6.19-2.54.03.12Z" fill="url(#Névtelen_színátmenet_43)"/>
+  <path d="M22.09,15.27l.4.21s.53.19.63.21c.11.01,2.32-.27,2.32-.27l.96-1.42s-.29-.18-1.11-.45c-.82-.27-1.61-.44-1.61-.44l-4.24.6-.83.13,3.47,1.43Z" fill="url(#Névtelen_színátmenet_44)"/>
+  <path d="M29.73,8.64l-5.15,1.18-5.96,2.09-1.3.56-.15.77,1.45.6.83-.13-.34-.26.26-.1,4.36-.59,3.05.5,2.68-.84,1.28-2.99-1.01-.78Z" fill="url(#Névtelen_színátmenet_45)"/>
+  <path d="M22.8,15.26s1.98-.13,2.22-.2c.24-.07,1.24-1,1.24-1l.02.03s-.93.91-1.12,1c-.18.1-.65.13-1.06.16-.41.04-1.21.07-1.21.07l-.09-.07Z" fill="#7f4d00"/>
+  <path d="M25.38,13.94s-.96.07-1.71.13c-.75.06-1.46.1-1.46.1,0,0,.05.06.37.06.32,0,2.74-.17,2.74-.17l.06-.12Z" fill="url(#Névtelen_színátmenet_46)"/>
+  <path d="M21.76,10.67s2.73-.91,3.12-1.06c.4-.15,4.29-.93,4.55-.99.25-.06.38-.05.49.04.11.1.79.62.84.69.05.06.05.09,0,.2-.05.11-.45.03-.45.03l-.64-.49-5.44,1.26-.22.07-3.11.97.86-.73Z" fill="#fdedbc"/>
+  <path d="M17.46,12.61s2.25-.81,3.83-1.35c1.57-.53,2.21-.81,3.07-1.04.86-.24,1.56-.4,2.57-.61,1-.21,2.78-.6,2.78-.6l.6.58-1.02,2.03.46-.08.86-1.63.15-.35s-.83-.7-.91-.76c-.08-.06-.16-.07-.31-.05-.15.03-3.87.83-4.51.96-.64.13-1.49.41-1.88.53-.38.12-1.3.39-1.41.43-.11.05-4.26,1.47-4.26,1.47l-.04.47Z" fill="url(#Névtelen_színátmenet_47)"/>
+  <path d="M17.46,12.61s2.25-.81,3.83-1.35c1.57-.53,2.21-.81,3.07-1.04.86-.24,1.56-.4,2.57-.61,1-.21,2.78-.6,2.78-.6l.6.58-1.02,2.03.46-.08.86-1.63.15-.35s-.83-.7-.91-.76c-.08-.06-.16-.07-.31-.05-.15.03-3.87.83-4.51.96-.64.13-1.49.41-1.88.53-.38.12-1.3.39-1.41.43-.11.05-4.26,1.47-4.26,1.47l-.04.47Z" fill="url(#Névtelen_színátmenet_48)"/>
+  <path d="M29.62,11.42l.99-1.51s-.98,2.36-1.04,2.46c-.06.1-.07.18-.2.23-.12.05-2.72.87-2.9.93-.18.06-.34.02-.47-.03-.13-.05-2.34-.62-2.34-.62l5.96-1.45Z" fill="#fbdb8e"/>
+  <path d="M24.24,10.52l.55.69,4.84.2-.17.26-4.84-.28-.03-.11-.35-.77Z" fill="#af772e"/>
+  <path d="M24.64,11.38l-.41-1.02-.22.07.58.93-1.08,1.03v.18l-.85-.61.17-.14s-.55-.04-1.59.15c-1.04.19-2.48.48-2.58.57,0,0,.44,0,.81,0,.79-.2,1.6-.33,2.41-.47-.75.14-1.5.27-2.23.46.05,0,.1,0,.14,0,.36-.01,1.29-.25,1.73-.33.44-.08,1.02-.11,1.07-.1.05,0,.57.53.57.53,0,0-1.26.25-1.78.3-.52.04-1.88.22-2.44.11,0,0-.36-.15-.61-.11l.52.35c.57-.06,1.15-.09,1.72-.1-.56.03-1.11.07-1.67.14l.23.15,4.45-.58,2.46.04,3.27-.93.2-.31-4.84-.28Z" fill="url(#Névtelen_színátmenet_49)"/>
+  <path d="M29.52,11.62l-4.5-.07h0l-.99,1.03,2.34.6,2.98-.9h.01s.13-.52.13-.52l.11-.14h-.08ZM29.31,12.23l-2.96.9-2.25-.57.92-.95,4.43.06-.15.57Z" fill="url(#Névtelen_színátmenet_50)"/>
+  <path d="M29.46,11.66l-.15.57-2.96.9-2.25-.57.92-.95,4.43.06Z" fill="url(#Névtelen_színátmenet_51)"/>
+  <path d="M22.84,12.08s.63-.33.97-.53c.35-.2.69-.34.69-.34,0,0-.1.27-.7.59-.6.33-.96.27-.96.27Z" fill="url(#Névtelen_színátmenet_52)"/>
+  <path d="M18.91,13.45s.79.39.94.4c.15,0,1.36-.06,1.48-.05.11.01.2.13.55.27.34.14.71.17.71.17l-.15.25-.1-.15-.95-.32s-1.22.04-1.33.04-.89-.26-1.14-.6Z" fill="url(#Névtelen_színátmenet_53)"/>
+  <path d="M21.34,13.8s1.66-.41,1.93-.41,2.11.55,2.11.55c0,0-1.06-.15-1.48-.26-.42-.1-.45-.14-.66-.16-.21-.02-.81.17-1,.21-.19.04-.91.06-.91.06Z" fill="url(#Névtelen_színátmenet_54)"/>
+  <path d="M22.19,14.84s.16,0,.21.01c.05.02.73.66.73.66,0,0-.08.02-.19-.05-.11-.08-.75-.62-.75-.62Z" fill="#e8be6c"/>
+  <path d="M22.5,15.48l-5.41-2.23.1-.06s2.01.81,2.89,1.16c.88.36,1.51.64,1.89.81.38.17.53.31.53.31Z" fill="#f6d8a8"/>
+  <path d="M30.76,9.35c-.05-.06-.73-.59-.84-.69-.11-.1-.24-.1-.49-.04-.25.06-4.15.84-4.55.99-.34.13-2.34.8-2.95,1-.09.03-.15.05-.17.06-.11.05-4.26,1.47-4.26,1.47l-.02.26-.16.07-.14.74-.09.05,5.41,2.23s.53.19.63.21c.11.01,2.32-.27,2.32-.27l.96-1.42s-.29-.18-1.11-.45c-.82-.27-1.61-.44-1.61-.44l-4.24.6-.34-.26,4.45-.58h.1s2.22.57,2.34.62c.13.05.28.09.47.03.18-.06,2.78-.88,2.9-.93.12-.05.14-.12.2-.23.06-.1,1.04-2.46,1.04-2.46l.15-.35c.05-.11.05-.14,0-.2ZM14.68,13.21l-.17-.32v-.25c.15.06.24.09.24.09l-.41-.59s-1.66-.57-3.83-1.28c-2.17-.71-2.3-.85-3.86-1.29-1.55-.44-4.66-.99-4.66-.99l-.93.81,1.27,3.18,3,.92s.34-.02.46-.04c.12-.02,2.12-.55,2.57-.57.45-.02,1.91.22,2.71.34.79.12,1.65.2,2.07.1.05-.01.09-.02.14-.04-.15.09-.68.27-1.44.25-.76-.02-2.7-.47-3.46-.47-.76,0-2.94.84-2.94.84,0,0,.09.28.34.61.26.34.6.78.91.88.32.1,1.88.3,1.88.3,0,0,.15,0,.28-.02.13-.03,5.95-2.4,5.95-2.4l-.03-.12-.09.04Z" fill="url(#Névtelen_színátmenet_55)"/>
+  <path d="M16.61,14.12s-.18.16-.27.27c-.09.11-.1.22-.1.22,0,0-.39.05-.63-.02l-.23-.47h1.22Z" fill="url(#Névtelen_színátmenet_56)"/>
+  <path d="M14.62,14.2s-.39-.38-.48-.86c-.1-.5-.17-1.21.19-1.75.4-.58,1.53-.82,2.47-.59.99.24,1.13,1.19,1.13,1.74,0,.62-.31,1.2-.91,1.61-.65.44-1.75.44-2.4-.16Z" fill="url(#Névtelen_színátmenet_57)"/>
+  <path d="M14.56,14.39c.87.77,1.8.77,2.42.18.09-.08.15-.12.23-.21-.6.63-1.91.66-2.65.03Z" fill="url(#Névtelen_színátmenet_73-13)"/>
+  <path d="M17.43,10.36s-.09.06-.11.09c0-.01-.03-.05-.09-.09-.32-.32-.85-.55-1.5-.48-.71.08-.94.48-1.27.32-.32-.16-.39-.63-.39-.63.05.15.14.37.28.49.24.2.53-.1,1.38-.22.79-.11,1.49.17,1.68.51Z" fill="#1d0b10"/>
+  <path d="M17.22,10.36c-.21-.16-.74-.45-1.24-.45-.64,0-1.37.5-1.4.57,0,0,0,.02,0,.03,0,0-.13-.12-.25-.25-.13-.13-.25-.26-.25-.29v-.39s.06.47.39.63c.32.16.56-.24,1.27-.32.65-.08,1.17.16,1.5.48Z" fill="#4a220d"/>
+  <path d="M17.78,9.32v.64c0,.15-.21.29-.36.4-.19-.35-.89-.62-1.68-.51-.86.11-1.15.41-1.38.22-.14-.12-.23-.33-.28-.49v-.24s.2.2.53.18c.33-.02.46-.4.46-.4l.11-.32s.02.22.05.49c.03.28.38.48.72.48.34,0,.7-.09.78-.52,0,0,.07.2.44.26.37.05.62-.18.62-.18Z" fill="url(#Névtelen_színátmenet_59)"/>
+  <path d="M17.05,7.93h-2.14c-.25,0-1.04.59-1.04.91v.95c0,.16.02.25.05.27.03.03.56.55.61.55.04,0,.04-.05.05-.11,0,0-.13-.12-.25-.25-.13-.13-.25-.26-.25-.29v-.63s.2.2.53.18.46-.4.46-.4l.11-.32s.02.22.05.49c.03.28.38.48.72.48.34,0,.7-.09.78-.52,0,0,.07.2.44.26.37.05.62-.18.62-.18v.64c0,.15-.21.29-.36.4-.05.03-.09.06-.11.09-.02.06.03.14.06.11.03-.02.61-.39.61-.57v-1.22c0-.29-.8-.84-.93-.84Z" fill="url(#Névtelen_színátmenet_61)"/>
+  <g mask="url(#mask)">
+    <g>
+      <path d="M17.89,7.97h-3.56v2.05h3.56v-2.05Z" fill="url(#Névtelen_színátmenet_61-2)"/>
+      <g mask="url(#mask-1)">
+        <path d="M17.02,8.02c-.22.17-.33.43-.37.65-.04.22-.15.86-.75.89-.6.03-.66-.52-.75-.96-.09-.44-.14-.58-.14-.58h2.01Z" fill="url(#Névtelen_színátmenet_62)"/>
+      </g>
+    </g>
+  </g>
+  <path d="M16.8,8.81s-.08.39.2.54c.28.16.76-.08.76-.08,0,0-.06.23-.55.24-.49.01-.61-.5-.42-.9.18-.4.6-.35.86-.15.26.2.34.64-.06.83-.4.2-.85-.11-.79-.49Z" fill="#211105"/>
+  <path d="M14.97,8.96s-.18.46-.54.41c-.36-.05-.62-.49-.26-.87.36-.38.95-.25.99.34.04.59-.5.72-.77.69-.27-.03-.33-.24-.33-.24,0,0,.28.21.58.1.31-.1.32-.43.32-.43Z" fill="#211105"/>
+  <path d="M14.46,8.5s0,0,0,.01h0s0-.01,0-.01Z" fill="#211105"/>
+  <path d="M14.35,8.78c.04-.13.08-.23.1-.27-.13.03-.24.09-.3.18-.1.16,0,.3.22.35-.02-.06-.05-.16-.02-.27Z" fill="url(#Névtelen_színátmenet_74)"/>
+  <path d="M14.72,8.86c.02-.07-.03-.1-.07-.15-.04-.06-.04-.08-.04-.08,0,0,0,.11.04.15.05.04-.02.05-.01.16,0,.04.02.07.04.1.07-.02.11-.05.12-.05-.03-.03-.08-.09-.07-.14Z" fill="#211105"/>
+  <path d="M14.46,8.9c0-.1.04-.12,0-.21-.03-.07-.01-.15,0-.17h0s-.06.14-.1.27c-.03.11,0,.21.02.26,0,0,.01,0,.02,0,.07.01.12.01.18,0-.05-.04-.12-.1-.11-.16Z" fill="#211105"/>
+  <path d="M14.75,8.54c-.09-.04-.2-.05-.3-.03,0,.03-.03.11,0,.17.04.09,0,.11,0,.21,0,.06.06.13.11.16.04,0,.07-.01.11-.02-.02-.03-.04-.06-.04-.1,0-.11.06-.11.01-.16-.05-.04-.04-.15-.04-.15,0,0,0,.02.04.08.04.06.09.09.07.15-.01.04.04.1.07.14h0c.2-.13.15-.35-.04-.45Z" fill="url(#Névtelen_színátmenet_74-2)"/>
+  <path d="M17.25,8.7s-.06.26.09.26c.15,0,.19-.24.2-.29.01-.05-.14-.23-.39-.16-.25.07-.31.36-.15.43.16.06.2-.01.21-.11,0-.09.04-.13.04-.13Z" fill="url(#Névtelen_színátmenet_74-3)"/>
+  <path d="M17.62,8.73s-.02.08-.04.15c-.02.07-.06.04-.1.08-.04.04.03.09.03.13,0,.04.15.01.19-.17.04-.18-.07-.25-.08-.2Z" fill="url(#Névtelen_színátmenet_74-4)"/>
+  <path d="M10.84,6.3s.06.1.21.13c.15.03.41.26.51.44.1.18.09.28.09.28,0,0-.13.04-.19-.08-.07-.12-.44-.24-.49-.27-.05-.04,0-.15,0-.15,0,0-.08.02-.2-.06-.12-.08-.12-.11-.12-.14,0-.03.13-.22.19-.16Z" fill="url(#Névtelen_színátmenet_73-14)"/>
+  <path d="M11.72,7.23s.02-.11.1-.08c.07.03.41.72.46.94.05.22-.08.34-.23.28-.15-.07-.43-.95-.43-1.06,0-.11.1-.09.1-.09Z" fill="url(#Névtelen_színátmenet_73-15)"/>
+  <path d="M12.94,9.63s.21-.08.2-.12c-.01-.04-.65-.9-.65-.9l-.42-.09.41.5.36.58.1.04Z" fill="#211105"/>
+  <path d="M13.14,9.51s-.11.08-.2-.04c-.1-.13-.28-.54-.48-.73-.2-.18-.34-.2-.34-.2,0,0,.3.3.45.5.15.2.22.36.27.45.04.09.11.15.11.15,0,0-.07.05-.15-.06-.08-.1-.22-.42-.45-.66-.23-.24-.39-.35-.41-.38-.02-.04.44-.14.6-.07.17.07.46.65.61,1.05Z" fill="url(#Névtelen_színátmenet_73-16)"/>
+  <path d="M13.87,11.12s.1-.19.2-.18c.1,0,.13.03.06.18-.08.15-.26,0-.26,0Z" fill="#f5f0a5"/>
+  <path d="M13.96,11.41s.15-.22.17-.29c.02-.07,0-.09-.04-.11-.04-.03-.21.12-.21.12,0,0-.54-1.05-.61-1.26-.07-.21-.46-.11-.52-.09-.06.02.02.66.15.79.13.13.39.26.58.47.19.21.31.35.31.35l.18.02Z" fill="url(#Névtelen_színátmenet_74-5)"/>
+  <path d="M13.2,10.52s-.23-.09-.29-.24c-.06-.15-.04-.33-.03-.4.02-.07.17-.11.26-.03s.08.22.11.32c.04.09-.05-.11-.05-.11l-.1.28.09.18Z" fill="#f5f0a5"/>
+  <path d="M13.96,11.41s-.41-.6-.53-.83-.23-.56-.23-.56c0,0-.13.23-.14.33-.02.1.22.23.22.23,0,0-.08-.41-.07-.52,0,0,.15.51.25.8.11.29.29.5.33.53.03.02.21.08.18.02Z" fill="#211105"/>
+  <path d="M11.77,7.29s.08.21.18.59c.1.38.17.44.17.44,0,0-.06-.26-.15-.58-.09-.32-.2-.45-.2-.45Z" fill="#211105"/>
+  <path d="M11.32,6.83s.1.06.14.02c0,0-.04.12-.09.08-.05-.04-.05-.1-.05-.1Z" fill="#211105"/>
+  <path d="M11.1,6.69s.01.13.09.07c0,0-.03.11-.09.05-.07-.06,0-.11,0-.11Z" fill="#211105"/>
+  <path d="M10.9,6.5s.02.08.06.07c0,0-.03.09-.08.04-.05-.05.02-.11.02-.11Z" fill="#211105"/>
+  <path d="M21.02,6.3s-.06.1-.21.13c-.15.03-.41.26-.51.44-.1.18-.09.28-.09.28,0,0,.13.04.19-.08.07-.12.44-.24.49-.27.05-.04,0-.15,0-.15,0,0,.08.02.2-.06.12-.08.12-.11.12-.14,0-.03-.13-.22-.19-.16Z" fill="url(#Névtelen_színátmenet_73-17)"/>
+  <path d="M20.14,7.23s-.02-.11-.1-.08c-.07.03-.41.72-.46.94-.05.22.08.34.23.28.15-.07.43-.95.43-1.06,0-.11-.1-.09-.1-.09Z" fill="url(#Névtelen_színátmenet_73-18)"/>
+  <path d="M18.92,9.63s-.21-.08-.2-.12c.01-.04.65-.9.65-.9l.42-.09-.41.5-.36.58-.1.04Z" fill="#211105"/>
+  <path d="M18.72,9.51s.11.08.2-.04c.1-.13.28-.54.48-.73.2-.18.34-.2.34-.2,0,0-.3.3-.45.5s-.22.36-.27.45c-.04.09-.11.15-.11.15,0,0,.07.05.15-.06.08-.1.22-.42.45-.66.23-.24.39-.35.41-.38.02-.04-.44-.14-.6-.07-.17.07-.46.65-.61,1.05Z" fill="url(#Névtelen_színátmenet_73-19)"/>
+  <path d="M17.99,11.12s-.1-.19-.2-.18c-.1,0-.13.03-.06.18.08.15.26,0,.26,0Z" fill="#f5f0a5"/>
+  <path d="M17.9,11.41s-.15-.22-.17-.29,0-.09.04-.11c.04-.03.21.12.21.12,0,0,.54-1.05.61-1.26.07-.21.46-.11.52-.09.06.02-.02.66-.15.79-.13.13-.39.26-.58.47-.19.21-.31.35-.31.35l-.18.02Z" fill="url(#Névtelen_színátmenet_74-6)"/>
+  <path d="M18.66,10.52s.23-.09.29-.24c.06-.15.04-.33.03-.4-.02-.07-.17-.11-.26-.03-.1.08-.08.22-.11.32-.04.09.05-.11.05-.11l.1.28-.09.18Z" fill="#f5f0a5"/>
+  <path d="M17.9,11.41s.41-.6.53-.83c.11-.23.23-.56.23-.56,0,0,.13.23.14.33.02.1-.22.23-.22.23,0,0,.08-.41.07-.52,0,0-.15.51-.25.8-.11.29-.29.5-.33.53-.04.03-.21.08-.18.02Z" fill="#211105"/>
+  <path d="M20.09,7.29s-.08.21-.18.59c-.1.38-.17.44-.17.44,0,0,.06-.26.15-.58.09-.32.2-.45.2-.45Z" fill="#211105"/>
+  <path d="M20.54,6.83s-.1.06-.14.02c0,0,.04.12.09.08.05-.04.05-.1.05-.1Z" fill="#211105"/>
+  <path d="M20.75,6.69s-.01.13-.09.07c0,0,.03.11.09.05.07-.06,0-.11,0-.11Z" fill="#211105"/>
+  <path d="M20.96,6.5s-.02.08-.06.07c0,0,.03.09.08.04.05-.05-.02-.11-.02-.11Z" fill="#211105"/>
+  <path d="M15.06,7.63s.09-.02.07-.09c-.02-.07-.07,0-.11,0-.04.02-.02,0-.02-.04,0-.04,0-.02.03-.02.02,0,.07,0,.03-.07-.03-.07-.05-.04-.05-.08,0-.04-.03-.06-.07-.02s-.07,0-.04,0c.02,0,.06.05.07.02.01-.03-.02-.08-.03-.12,0-.04-.05-.03-.04-.04,0,0,.04-.06.02-.07-.01-.02-.06-.03-.06-.05,0-.03,0-.02-.04-.04-.03-.01.01-.02.01-.06,0-.04,0-.05-.02-.09-.03-.04,0-.04-.05-.06-.05-.02-.03.05-.05.05s-.06-.02-.07.02c-.02.05,0,.14.02.15.02.02.01,0,.02.04.01.04.03.02.04.06,0,.05.05-.03.06-.03,0,0,.05.01.05.03,0,.02.02.04-.04,0-.06-.03-.06,0-.06.06s.06.02.05.08c0,.07,0,.06.04.09.03.03,0,.08.03.1.03.02-.02.03.04.08.07.05.03.07.07.11.04.05.03.03.08.08.05.06.05.07.1.09s.08,0,.1-.05c.02-.05-.04-.07-.05-.11,0-.04-.05-.06-.08-.05-.03,0-.02.03-.06.03-.03,0,0-.02,0-.02Z" fill="url(#Névtelen_színátmenet_84)"/>
+  <path d="M14.56,6.46s.08,0,.08.04c0,.04.03.03.06.07.03.04-.05.08,0,.09.06,0,.06.07.07.1,0,.02-.03.03-.06.06-.02.03-.1.05-.1.01,0-.04-.07-.02-.07-.07s.02-.06-.03-.09c-.05-.03-.05-.04-.04-.1,0-.06,0-.04.02-.08.03-.04.06-.03.06-.03Z" fill="url(#Névtelen_színátmenet_84-2)"/>
+  <path d="M14.3,6.23s-.02.02-.03.06c-.01.04-.01.04.03.09.04.05.03.05.09.07.06.02.09.04.11,0,.02-.04.02-.04,0-.08-.02-.03-.01-.03-.03-.07-.02-.03-.07-.06-.09-.09-.03-.02-.07.03-.07,0,0-.03-.03-.07-.07-.1-.04-.04-.03-.04-.06-.06-.03-.02-.09-.04-.1,0-.02.03-.02.02-.05.03-.03.01,0,.14.03.14.03,0,.03.03.06.04.03,0,.02,0,.07.04.05.03.12-.05.12-.05Z" fill="url(#Névtelen_színátmenet_84-3)"/>
+  <path d="M13.94,5.88s.04.04.07.05c.03,0,.04.04.04.08,0,.04-.03,0-.07.06-.03.05-.09.05-.11,0-.02-.05-.07,0-.12-.06-.05-.06-.03-.08-.02-.13,0-.05.08-.02.13-.03.05-.01.08.03.08.03Z" fill="url(#Névtelen_színátmenet_84-4)"/>
+  <path d="M13.73,5.79s-.05.04-.04.09c0,.05,0,.07-.03.06s-.05-.03-.12-.06c-.07-.03-.11-.02-.21-.04-.1-.02-.06-.01-.2,0-.14.02-.15.02-.13-.03.02-.06,0-.1.12-.17.12-.07.18-.05.26-.03.08.02.07,0,.15.04.08.03.07.01.13.04.06.03.11.06.08.1Z" fill="url(#Névtelen_színátmenet_84-5)"/>
+  <path d="M16.8,7.63s-.09-.02-.07-.09c.02-.07.07,0,.11,0,.04.02.02,0,.02-.04,0-.04,0-.02-.03-.02-.02,0-.07,0-.03-.07.03-.07.05-.04.05-.08,0-.04.03-.06.07-.02.04.04.07,0,.04,0-.02,0-.06.05-.07.02-.01-.03.02-.08.03-.12s.05-.03.04-.04c0,0-.04-.06-.02-.07.01-.02.06-.03.06-.05,0-.03,0-.02.04-.04.03-.01-.01-.02-.01-.06,0-.04,0-.05.02-.09.03-.04,0-.04.05-.06.05-.02.03.05.05.05s.06-.02.07.02c.02.05,0,.14-.02.15-.02.02-.01,0-.02.04-.01.04-.03.02-.04.06,0,.05-.05-.03-.06-.03,0,0-.05.01-.05.03,0,.02-.02.04.04,0,.06-.03.06,0,.06.06,0,.06-.06.02-.05.08,0,.07,0,.06-.04.09-.03.03,0,.08-.03.1-.03.02.02.03-.04.08-.07.05-.03.07-.07.11-.04.05-.03.03-.08.08-.05.06-.05.07-.1.09-.05.02-.08,0-.1-.05-.02-.05.04-.07.05-.11,0-.04.05-.06.08-.05.03,0,.02.03.06.03s0-.02,0-.02Z" fill="url(#Névtelen_színátmenet_84-6)"/>
+  <path d="M17.3,6.46s-.08,0-.08.04c0,.04-.03.03-.06.07-.03.04.05.08,0,.09-.06,0-.06.07-.07.1,0,.02.03.03.06.06.02.03.1.05.1.01,0-.04.07-.02.07-.07s-.02-.06.03-.09c.05-.03.05-.04.04-.1,0-.06,0-.04-.02-.08-.03-.04-.06-.03-.06-.03Z" fill="url(#Névtelen_színátmenet_84-7)"/>
+  <path d="M17.56,6.23s.02.02.03.06c.01.04.01.04-.03.09-.04.05-.03.05-.09.07-.06.02-.09.04-.11,0-.02-.04-.02-.04,0-.08.02-.03.01-.03.03-.07.02-.03.07-.06.09-.09.03-.02.07.03.07,0,0-.03.03-.07.07-.1.04-.04.03-.04.06-.06.03-.02.09-.04.1,0,.02.03.02.02.05.03.03.01,0,.14-.03.14-.03,0-.03.03-.06.04-.03,0-.02,0-.07.04-.05.03-.12-.05-.12-.05Z" fill="url(#Névtelen_színátmenet_84-8)"/>
+  <path d="M17.92,5.88s-.04.04-.07.05c-.03,0-.04.04-.04.08,0,.04.03,0,.07.06.03.05.09.05.11,0s.07,0,.12-.06c.05-.06.03-.08.02-.13,0-.05-.08-.02-.13-.03-.05-.01-.08.03-.08.03Z" fill="url(#Névtelen_színátmenet_84-9)"/>
+  <path d="M18.13,5.79s.05.04.04.09c0,.05,0,.07.03.06.04-.01.05-.03.12-.06.07-.03.11-.02.21-.04.1-.02.06-.01.2,0,.14.02.15.02.13-.03-.02-.06,0-.1-.12-.17-.12-.07-.18-.05-.26-.03-.08.02-.07,0-.15.04-.08.03-.07.01-.13.04-.06.03-.11.06-.08.1Z" fill="url(#Névtelen_színátmenet_84-10)"/>
+</svg>
